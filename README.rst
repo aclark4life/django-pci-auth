@@ -2,7 +2,7 @@
 django-pci-auth
 ===============
 
-This project integrates the current "best of" PCI auth libraries in to a single application, then fills in the gaps.
+This application integrates the current Django "best of" PCI auth libraries/applications into a single application, then fills in the gaps.
 
 Requirements
 ------------
