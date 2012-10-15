@@ -22,4 +22,4 @@ Requirements
 Libraries
 ---------
 
-XXX Fill in libs
+XXX Fill in list of current "best of" libraries in existence e.g. http://www.djangopackages.com/grids/g/authorization/
