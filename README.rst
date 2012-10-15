@@ -22,4 +22,11 @@ Requirements
 Libraries
 ---------
 
-XXX Fill in list of current "best of" libraries in existence e.g. http://www.djangopackages.com/grids/g/authorization/
+**XXX** Fill in list of current "best of" libraries in existence e.g. http://www.djangopackages.com/grids/g/authorization/
+
+License
+-------
+
+This software is licensed under the same BSD license that Django is licensed under. See: `LICENSE`_
+
+_`LICENSE`: https://github.com/aclark4life/django-pci-auth/blob/master/LICENSE
