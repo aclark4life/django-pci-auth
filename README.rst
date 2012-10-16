@@ -22,7 +22,7 @@ Requirements
 Overview
 --------
 
-PCI is complex. Here is a bit of background on the subject. Inasmuch as it's possible to summarize it here.
+PCI is complex. Here is a bit of background on the subject. Inasmuch as it's possible to summarize here.
 
 Levels
 ~~~~~~
