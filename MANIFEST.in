@@ -1,0 +1,2 @@
+include *
+recursive-include django_pci_auth *
