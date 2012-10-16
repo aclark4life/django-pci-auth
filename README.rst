@@ -37,7 +37,12 @@ Via: http://www.elementps.com/merchants/pci-dss/compliance-level/
 Libraries
 ---------
 
-**XXX** Fill in list of current "best of" libraries in existence e.g. http://www.djangopackages.com/grids/g/authorization/
+A list of libraries included:
+
+**XXX** In flux
+
+- http://www.djangopackages.com/grids/g/authorization/
+- http://code.google.com/p/django-axes/
 
 License
 -------
