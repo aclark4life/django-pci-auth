@@ -19,6 +19,21 @@ Requirements
 - generate event/email when lock-out occurs.
 - force password reset after X amount of time.
 
+Overview
+--------
+
+PCI is complex. Here is a bit of background on the subject. Inasmuch as it's possible to summarize it here.
+
+Levels
+~~~~~~
+
+- PCI Compliance Level 1 - Merchants processing over 6 million Visa transactions annually (all channels) or Global merchants identified as Level 1 by any Visa region
+- PCI Compliance Level 2 - Merchants processing 1 million to 6 million Visa transactions annually (all channels)
+- PCI Compliance Level 3 - Merchants processing 20,000 to 1 million Visa e-commerce transactions annually
+- PCI Compliance Level 4 - Merchants processing less than 20,000 Visa e-commerce transactions annually and all other merchants processing up to 1 million Visa transactions annually
+
+Via: http://www.elementps.com/merchants/pci-dss/compliance-level/
+
 Libraries
 ---------
 
