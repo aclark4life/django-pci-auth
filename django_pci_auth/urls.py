@@ -17,7 +17,7 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
 
     # Hello, world!
-    (r'', 'project.views.index'),
+    (r'', 'django_pci_auth.views.index'),
 )
 
 if settings.DEBUG:
