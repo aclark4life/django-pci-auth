@@ -43,6 +43,14 @@ A list of libraries included:
 - http://www.djangopackages.com/grids/g/authorization/
 - http://code.google.com/p/django-axes/
 - http://ianlewis.bitbucket.org/django-newauth/
+- https://github.com/dstufft/django-passwords/
+
+Articles
+--------
+
+A list of articles:
+
+- http://www.insomnihack.com/?p=451
 
 License
 -------
