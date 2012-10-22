@@ -10,7 +10,7 @@ setup(
     install_requires=[
 #        'django-newauth',
 #        'django-axes',
-        'django-passwords',
+#        'django-passwords',
     ],
     name='django-pci-auth',
     version=VERSION,
