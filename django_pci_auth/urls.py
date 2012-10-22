@@ -1,6 +1,7 @@
 
 from django.conf.urls.defaults import *
 from django.conf import settings
+from django_pci_auth.admin import admin_site
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -16,7 +17,9 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     #(r'^admin/', include(admin.site.urls)),
-    (r'', include(admin.site.urls)),
+    #(r'', include(admin.site.urls)),
+
+    (r'', include(admin_site.urls)),
 
     # Hello, world!
     #(r'', 'django_pci_auth.views.index'),
