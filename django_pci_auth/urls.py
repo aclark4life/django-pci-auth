@@ -17,9 +17,8 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     #(r'^admin/', include(admin.site.urls)),
-    #(r'', include(admin.site.urls)),
-
-    (r'', include(admin_site.urls)),
+    (r'', include(admin.site.urls)),
+    #(r'', include(admin_site.urls)),
 
     # Hello, world!
     #(r'', 'django_pci_auth.views.index'),
