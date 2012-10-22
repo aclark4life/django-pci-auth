@@ -1,7 +1,7 @@
 
 from django.conf.urls.defaults import *
 from django.conf import settings
-from django_pci_auth.admin import admin_site
+#from django_pci_auth.admin import admin_site
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
