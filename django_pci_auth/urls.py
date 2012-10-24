@@ -8,7 +8,9 @@ from django_pci_auth.views import index
 from django_pci_auth.forms import ValidatingPasswordChangeForm
 import django.contrib.admindocs.urls
 
+
 admin.autodiscover()
+
 
 urlpatterns = patterns(
     '',  # prefix
