@@ -16,8 +16,13 @@ Or in some cases, some additional functionality may be provided e.g.:
 Features
 --------
 
+**XXX Done**
+
 - Stronger password hashing that allows for selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py [1]
-- checking for 'strong' passwords. again with a default and overrideable in settings.py
+- Checking for 'strong' passwords. again with a default and overrideable in settings.py
+
+**XXX Not done**
+
 - provide JavaScript as well as Django-side checking for 'strong' passwords.
 - integrate strong passwords into Admin.
 - log every log-on and explicit log-out (not necessary timed out log-ins).
@@ -64,6 +69,28 @@ A list of relevant articles:
 - http://stackoverflow.com/questions/11257607/customising-the-django-admin-change-password-page
 - http://stackoverflow.com/questions/5226329/enforcing-password-strength-requirements-with-django-contrib-auth-views-password
 - http://stackoverflow.com/questions/13055722/enforcing-password-strength-requirements-in-django
+
+Settings
+--------
+
+Stronger password hashing
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is a built-in feature in Django 1.4+. Documented here for convenience::
+
+    PASSWORD_HASHERS = (
+        # From https://docs.djangoproject.com/en/1.4/topics/auth/:
+        # "[redacted] This means that Django will use the first hash in the list
+        # to store all passwords, but will support checking passwords stored with
+        # the rest of the hashes in the list. If you remove a hash from the list
+        # it will no longer be supported.
+        'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+        'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+        'django.contrib.auth.hashers.BCryptPasswordHasher',
+        'django.contrib.auth.hashers.SHA1PasswordHasher',
+        'django.contrib.auth.hashers.MD5PasswordHasher',
+        'django.contrib.auth.hashers.CryptPasswordHasher',
+    )
 
 License
 -------
