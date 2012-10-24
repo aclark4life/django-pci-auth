@@ -62,10 +62,10 @@ PASSWORD_MATCH_THRESHOLD = 0.9
 PASSWORD_COMPLEXITY = None
 PASSWORD_HASHERS = (
     # From https://docs.djangoproject.com/en/1.4/topics/auth/:
-    # "This means that Django will use PBKDF2 to store all passwords, but will
-    #  support checking passwords stored with PBKDF2SHA1, bcrypt, SHA1, etc.
-    #  The next few sections describe a couple of common ways advanced users
-    #  may want to modify this setting."
+    # "[redacted] This means that Django will use the first hash in the list
+    # to store all passwords, but will support checking passwords stored with
+    # the rest of the hashes in the list. If you remove a hash from the list
+    # it will no longer be supported.
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
     'django.contrib.auth.hashers.BCryptPasswordHasher',
