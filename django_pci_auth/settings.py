@@ -1,8 +1,9 @@
-
-# Django settings for django_pci_auth project.
-
 import os
 
+DEBUG=True
+TEMPLATE_DEBUG=DEBUG
+
+# Django settings for django_pci_auth project.
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
@@ -145,7 +146,7 @@ LOGGING = {
     }
 }
 
-# django-passwords
+# stronger password hashing that allows run time selection of hashing algoritm scrypt, bcrypt, PBKDF2, etc. via settings.py
 PASSWORD_MIN_LENGTH = 6
 PASSWORD_MAX_LENGTH = None
 PASSWORD_DICTIONARY = None
@@ -153,5 +154,3 @@ PASSWORD_MATCH_THRESHOLD = 0.9
 #PASSWORD_COMMON_SEQUENCES = 
 PASSWORD_COMPLEXITY = None
 
-DEBUG=True
-TEMPLATE_DEBUG=DEBUG
