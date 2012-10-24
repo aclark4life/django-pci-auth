@@ -1,3 +1,5 @@
+#import axes  # XXX Strange magic? I.e. does importing this module apply
+                # axes' settings?
 import os
 
 
@@ -10,7 +12,7 @@ AXES_LOGIN_FAILURE_LIMIT = 3
 AXES_LOCK_OUT_AT_FAILURE = True
 AXES_USE_USER_AGENT = False
 AXES_COOLOFF_TIME = None
-AXES_LOGGER = axes.watch_login
+#AXES_LOGGER = axes.watch_login
 AXES_LOCKOUT_TEMPLATE = None
 AXES_LOCKOUT_URL = None
 AXES_VERBOSE = True
