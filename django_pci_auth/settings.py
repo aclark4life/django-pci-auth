@@ -54,6 +54,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
+PASSWORD_MIN_LENGTH = 6
+PASSWORD_MAX_LENGTH = None
+PASSWORD_DICTIONARY = None
+PASSWORD_MATCH_THRESHOLD = 0.9
+#PASSWORD_COMMON_SEQUENCES =
+PASSWORD_COMPLEXITY = None
 ROOT_URLCONF = 'django_pci_auth.urls'
 SITE_ID = 1
 STATIC_ROOT = ''
@@ -71,12 +77,6 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
 )
-PASSWORD_MIN_LENGTH = 6
-PASSWORD_MAX_LENGTH = None
-PASSWORD_DICTIONARY = None
-PASSWORD_MATCH_THRESHOLD = 0.9
-#PASSWORD_COMMON_SEQUENCES =
-PASSWORD_COMPLEXITY = None
 TEMPLATE_DEBUG = DEBUG
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), "templates"),
