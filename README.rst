@@ -18,8 +18,8 @@ Features
 
 **XXX Done**
 
-- Stronger password hashing that allows for selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py [1]
-- Checking for 'strong' passwords. again with a default and overrideable in settings.py
+- Stronger password hashing that allows for selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py. [1]
+- Checking for strong passwords with a default length setting overrideable in settings.py. [2]
 
 **XXX Not done**
 
@@ -100,3 +100,5 @@ This software is licensed under the same BSD license that Django is licensed und
 .. _`LICENSE`: https://github.com/aclark4life/django-pci-auth/blob/master/LICENSE
 
 .. [1] This feature is included with Django 1.4+
+.. [2] This feature is provided by django-passwords
+
