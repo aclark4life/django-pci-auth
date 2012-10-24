@@ -19,11 +19,11 @@ Features
 
 - Stronger password hashing that allows for selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py. [1]
 - Checking for strong passwords with a default length setting overrideable in settings.py. [2]
+- Integrate strong passwords into Django Admin.
 
 **XXX Not done**
 
 - provide JavaScript as well as Django-side checking for 'strong' passwords.
-- integrate strong passwords into Admin.
 - log every log-on and explicit log-out (not necessary timed out log-ins).
 - set inactivity timeouts.
 - track last four passwords and do not allow re-use.
