@@ -11,6 +11,7 @@ setup(
     install_requires=[
         'docutils',
         'django-passwords',
+        'py-bcrypt',
     ],
     name='django-pci-auth',
     version=VERSION,
