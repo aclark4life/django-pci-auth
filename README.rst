@@ -16,7 +16,7 @@ Or in some cases, some additional functionality may be provided e.g.:
 Features
 --------
 
-- stronger password hashing that allows run time selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py
+- Stronger password hashing that allows for selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py [1]
 - checking for 'strong' passwords. again with a default and overrideable in settings.py
 - provide JavaScript as well as Django-side checking for 'strong' passwords.
 - integrate strong passwords into Admin.
@@ -70,3 +70,5 @@ License
 This software is licensed under the same BSD license that Django is licensed under. See: `LICENSE`_.
 
 .. _`LICENSE`: https://github.com/aclark4life/django-pci-auth/blob/master/LICENSE
+
+.. [1] This feature is included with Django 1.4+
