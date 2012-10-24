@@ -10,6 +10,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'docutils',
+        'django-axes',
         'django-passwords',
         'py-bcrypt',
     ],
