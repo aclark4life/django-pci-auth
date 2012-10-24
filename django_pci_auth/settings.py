@@ -16,37 +16,6 @@ DATABASES = {
     }
 }
 DEBUG = True
-LANGUAGE_CODE = 'en-us'
-MEDIA_ROOT = ''
-MEDIA_URL = ''
-MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-)
-SITE_ID = 1
-STATIC_ROOT = ''
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-)
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
-)
-SECRET_KEY = ''
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
-)
-
-
-ROOT_URLCONF = 'django_pci_auth.urls'
-
-
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -57,6 +26,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
 )
+LANGUAGE_CODE = 'en-us'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -75,8 +45,32 @@ LOGGING = {
     }
 }
 MANAGERS = ADMINS
-# stronger password hashing that allows run time selection of hashing
-# algoritm scrypt, bcrypt, PBKDF2, etc. via settings.py
+MEDIA_ROOT = ''
+MEDIA_URL = ''
+MIDDLEWARE_CLASSES = (
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+)
+ROOT_URLCONF = 'django_pci_auth.urls'
+SITE_ID = 1
+STATIC_ROOT = ''
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+)
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+SECRET_KEY = ''
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
 PASSWORD_MIN_LENGTH = 6
 PASSWORD_MAX_LENGTH = None
 PASSWORD_DICTIONARY = None
