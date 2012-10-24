@@ -9,9 +9,7 @@ setup(
     author_email='aclark@aclark.net',
     include_package_data=True,
     install_requires=[
-#        'django-newauth',
-#        'django-axes',
-#        'django-passwords',
+        'django-passwords',
     ],
     name='django-pci-auth',
     version=VERSION,
