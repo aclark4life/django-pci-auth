@@ -17,6 +17,7 @@ DATABASES = {
 }
 DEBUG = True
 INSTALLED_APPS = (
+    'axes',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -48,6 +49,7 @@ MANAGERS = ADMINS
 MEDIA_ROOT = ''
 MEDIA_URL = ''
 MIDDLEWARE_CLASSES = (
+    'axes.middleware.FailedLoginMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
