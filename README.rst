@@ -8,7 +8,7 @@ This application integrates the current Django "best of" PCI auth libraries into
 - https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
 
-Or in some cases, some additional functionality may be provided e.g.:
+Or in some cases, additional functionality may be provided by this package e.g.:
 
 - XXX Add example
 
