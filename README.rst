@@ -61,6 +61,7 @@ Articles
 A list of articles:
 
 - http://www.insomnihack.com/?p=451
+- http://stackoverflow.com/questions/11257607/customising-the-django-admin-change-password-page
 
 License
 -------
