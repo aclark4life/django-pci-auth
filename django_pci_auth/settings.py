@@ -60,6 +60,14 @@ PASSWORD_DICTIONARY = None
 PASSWORD_MATCH_THRESHOLD = 0.9
 #PASSWORD_COMMON_SEQUENCES =
 PASSWORD_COMPLEXITY = None
+PASSWORD_HASHERS = (
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.SHA1PasswordHasher',
+    'django.contrib.auth.hashers.MD5PasswordHasher',
+    'django.contrib.auth.hashers.CryptPasswordHasher',
+)
 ROOT_URLCONF = 'django_pci_auth.urls'
 SITE_ID = 1
 STATIC_ROOT = ''
