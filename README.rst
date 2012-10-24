@@ -6,7 +6,7 @@ This application integrates the current Django "best of" PCI auth libraries into
 Requirements
 ------------
 
-- stronger password hashing that allows run time selection of hashing algoritm scrypt, bcrypt, PBKDF2, etc. via settings.py
+- stronger password hashing that allows run time selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py
 - checking for 'strong' passwords. again with a default and overrideable in settings.py
 - provide JavaScript as well as Django-side checking for 'strong' passwords.
 - integrate strong passwords into Admin.
