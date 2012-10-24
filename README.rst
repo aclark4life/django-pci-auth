@@ -11,8 +11,8 @@ Or in some cases, some additional functionality may be provided e.g.:
 
 - XXX Add exmple
 
-Requirements
-------------
+Features
+--------
 
 - stronger password hashing that allows run time selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py
 - checking for 'strong' passwords. again with a default and overrideable in settings.py
@@ -26,8 +26,8 @@ Requirements
 - generate event/email when lock-out occurs.
 - force password reset after X amount of time.
 
-Overview
---------
+Background
+----------
 
 PCI is complex. Here is a bit of background on the subject. Inasmuch as it's possible to summarize here.
 
@@ -42,7 +42,7 @@ Levels
 Via: http://www.elementps.com/merchants/pci-dss/compliance-level/
 
 Libraries
----------
+~~~~~~~~~
 
 A list of libraries included:
 
@@ -54,7 +54,7 @@ A list of libraries included:
 - https://github.com/dstufft/django-passwords/
 
 Articles
---------
+~~~~~~~~
 
 A list of articles:
 
