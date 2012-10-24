@@ -91,6 +91,14 @@ This is a built-in feature in Django 1.4+. Documented here for convenience::
         'django.contrib.auth.hashers.CryptPasswordHasher',
     )
 
+Screenshots
+-----------
+
+Password length enforcement
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot.png
+
 License
 -------
 
