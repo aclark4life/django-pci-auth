@@ -5,6 +5,15 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
+# django-axes defaults
+AXES_LOGIN_FAILURE_LIMIT = 3
+AXES_LOCK_OUT_AT_FAILURE = True
+AXES_USE_USER_AGENT = False
+AXES_COOLOFF_TIME = None
+AXES_LOGGER = axes.watch_login
+AXES_LOCKOUT_TEMPLATE = None
+AXES_LOCKOUT_URL = None
+AXES_VERBOSE = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -56,13 +65,14 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
+# django-passwords defaults
 PASSWORD_MIN_LENGTH = 6
 PASSWORD_MAX_LENGTH = None
 PASSWORD_DICTIONARY = None
 PASSWORD_MATCH_THRESHOLD = 0.9
 #PASSWORD_COMMON_SEQUENCES =
 PASSWORD_COMPLEXITY = None
-PASSWORD_HASHERS = (
+PASSWORD_HASHERS = (  # Django 1.4 password hashing algorithms
     # From https://docs.djangoproject.com/en/1.4/topics/auth/:
     # "[redacted] This means that Django will use the first hash in the list
     # to store all passwords, but will support checking passwords stored with
