@@ -5,7 +5,6 @@ django-pci-auth
 
 This application integrates the current Django "best of" PCI auth libraries into a single application, then fills in the gaps. Filling gaps may involve making additional decisions for you, as suggested by Django Documentation e.g.:
 
-- https://docs.djangoproject.com/en/1.4/topics/auth/#how-django-stores-passwords
 - https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
 
