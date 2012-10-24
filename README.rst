@@ -11,7 +11,7 @@ This application integrates the current Django "best of" PCI auth libraries into
 
 Or in some cases, some additional functionality may be provided e.g.:
 
-- XXX Add exmple
+- XXX Add example
 
 Features
 --------
