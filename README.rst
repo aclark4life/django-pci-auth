@@ -24,13 +24,15 @@ Features
 
 **XXX Not done**
 
-- Provide JavaScript as well as Django-side checking for 'strong' passwords.
-- Log every log-on and explicit log-out (not necessary timed out log-ins).
-- Set inactivity timeouts.
-- Track last four passwords and do not allow re-use.
 - Set flags disallowing certain accounts to be locked out.
 - Generate event/email when lock-out occurs.
+- Log every log-on and explicit log-out (not necessary timed out log-ins).
+
+- Track last four passwords and do not allow re-use.
+- Provide JavaScript as well as Django-side checking for 'strong' passwords.
 - Force password reset after X amount of time.
+
+- Set inactivity timeouts.
 
 Background
 ----------
