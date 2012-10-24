@@ -2,6 +2,7 @@ from django.conf.urls.defaults import include
 from django.conf.urls.defaults import patterns
 from django.conf import settings
 from django.contrib import admin
+from django_pci_auth.forms import ValidatingPasswordChangeForm 
 admin.autodiscover()
 
 urlpatterns = patterns('',
