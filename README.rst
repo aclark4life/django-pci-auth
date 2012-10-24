@@ -99,6 +99,12 @@ Password length enforcement
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot.png
 
+
+Failed login attempts log
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-axes.png
+
 License
 -------
 
