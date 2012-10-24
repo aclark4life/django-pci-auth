@@ -20,6 +20,7 @@ Features
 - Stronger password hashing that allows for selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py. [1]
 - Checking for strong passwords with a default length setting overrideable in settings.py. [2]
 - Integrate strong passwords into Django Admin.
+- Lock out account for n minutes after x failed log-in attempts. [3]
 
 **XXX Not done**
 
@@ -27,7 +28,6 @@ Features
 - Log every log-on and explicit log-out (not necessary timed out log-ins).
 - Set inactivity timeouts.
 - Track last four passwords and do not allow re-use.
-- Lock out account for n minutes after x failed log-in attempts.
 - Set flags disallowing certain accounts to be locked out.
 - Generate event/email when lock-out occurs.
 - Force password reset after X amount of time.
@@ -114,4 +114,5 @@ This software is licensed under the same BSD license that Django is licensed und
 
 .. [1] This feature is included with Django 1.4+
 .. [2] This feature is provided by django-passwords
+.. [3] This feature is provided by django-axes
 
