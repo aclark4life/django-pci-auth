@@ -96,11 +96,15 @@ This is a built-in feature in Django 1.4+. Documented here for convenience::
 Screenshots
 -----------
 
+Overview of features
+~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-index.png
+
 Password length enforcement
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot.png
-
 
 Failed login attempts log
 ~~~~~~~~~~~~~~~~~~~~~~~~~
