@@ -54,12 +54,8 @@ Libraries
 
 A list of libraries included:
 
-**XXX** In flux
-
-- http://www.djangopackages.com/grids/g/authorization/
-- http://code.google.com/p/django-axes/
-- http://ianlewis.bitbucket.org/django-newauth/
-- https://github.com/dstufft/django-passwords/
+- https://github.com/codekoala/django-axes
+- https://github.com/dstufft/django-passwords
 
 Articles
 ~~~~~~~~
