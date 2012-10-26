@@ -1,8 +1,8 @@
 from setuptools import find_packages
 from setuptools import setup
+import os
 
-
-VERSION='0.0.1'
+VERSION = '0.0.1'
 
 setup(
     author='Alex Clark',
@@ -18,6 +18,13 @@ setup(
     ],
     long_description=open("README.rst").read(),
     name='django-pci-auth',
-    packages=find_packages(),
+    packages=[
+        'axes',
+#        'django_pci_auth',
+    ],
+    package_dir={
+        'axes': 'django-axes',
+#        'django_pci_auth': 'django_pci_auth'
+    },
     version=VERSION,
 )
