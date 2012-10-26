@@ -12,10 +12,10 @@ setup(
     include_package_data=True,
     install_requires=[
         'docutils',
-        'Django>=1.4',
         'django-axes',
         'django-passwords',
         'py-bcrypt',
+        'Django>=1.4',
     ],
     long_description=open("README.rst").read(),
     name='django-pci-auth',
