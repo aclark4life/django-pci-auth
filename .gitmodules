@@ -1,0 +1,3 @@
+[submodule "django-axes"]
+	path = django-axes
+	url = git://github.com/codekoala/django-axes.git
