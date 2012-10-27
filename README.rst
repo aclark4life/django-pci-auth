@@ -30,19 +30,19 @@ Features
 - Generate event/email when lock-out occurs.
 - Log every log-on and explicit log-out (not necessary timed out log-ins).
 
-  - Do these need to persist beyond a restart?
+  - **XXX Do these need to persist beyond a restart?**
 
 - Track last four passwords and do not allow re-use.
 
-  - Do these need to persist beyond a restart?
+  - **XXX Do these need to persist beyond a restart?**
 
 - Provide JavaScript to check for strong passwords inline.
 
-  - I assume the javascript code should check the Django settings via AJAX re: password length min/max, etc.
+  - **XXX I assume the javascript code should check the Django settings via AJAX re: password length min/max, etc.**
 
 - Force password reset after X amount of time.
 
-  - Do these need to persist beyond a restart?
+  - **XXX Do these need to persist beyond a restart?**
 
 Background
 ----------
