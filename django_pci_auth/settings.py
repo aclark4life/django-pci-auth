@@ -1,5 +1,3 @@
-#import axes  # XXX Strange magic? I.e. does importing this module apply
-                # axes' settings?
 import os
 
 
@@ -99,6 +97,8 @@ STATICFILES_FINDERS = (
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 SECRET_KEY = ''
+# From https://docs.djangoproject.com/en/1.4/topics/http/sessions/
+SESSION_COOKIE_AGE = 7200
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
