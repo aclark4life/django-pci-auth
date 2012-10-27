@@ -52,6 +52,8 @@ PCI is complex. Here is a bit of background on the subject. Inasmuch as it's pos
 Levels
 ~~~~~~
 
+**XXX Do we need to worry about levels?***
+
 - PCI Compliance Level 1 - Merchants processing over 6 million Visa transactions annually (all channels) or Global merchants identified as Level 1 by any Visa region
 - PCI Compliance Level 2 - Merchants processing 1 million to 6 million Visa transactions annually (all channels)
 - PCI Compliance Level 3 - Merchants processing 20,000 to 1 million Visa e-commerce transactions annually
