@@ -72,10 +72,11 @@ Articles
 
 A list of relevant articles:
 
-- http://www.insomnihack.com/?p=451
+- http://stackoverflow.com/questions/3566174/django-increase-inactivity-timeout
 - http://stackoverflow.com/questions/5226329/enforcing-password-strength-requirements-with-django-contrib-auth-views-password
 - http://stackoverflow.com/questions/13055722/enforcing-password-strength-requirements-in-django
 - http://www.egrappler.com/jquery-strong-password-plugin-power-pwchecker/
+- http://www.insomnihack.com/?p=451
 
 Settings
 --------
