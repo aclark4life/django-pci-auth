@@ -12,7 +12,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'docutils',
-#        'django-axes',  # 1.2.5rc1 has bad setup.py
+#        'django-axes',  # 1.2.5-rc1 has bad setup.py
         'django-passwords',
         'py-bcrypt',
     ],
