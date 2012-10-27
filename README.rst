@@ -7,6 +7,7 @@ This application integrates the current Django "best of" PCI auth libraries into
 
 - https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
+- https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
 
 Or in some cases, additional functionality may be provided by this package e.g.:
 
@@ -21,6 +22,7 @@ Features
 - Checking for strong passwords with a default length setting overrideable in settings.py. [2]
 - Integrate strong passwords into Django Admin.
 - Lock out account for n minutes after x failed log-in attempts. [3]
+- Set inactivity timeouts.
 
 **XXX Not done**
 
@@ -35,9 +37,12 @@ Features
   - Do these need to persist beyond a restart?
 
 - Provide JavaScript to check for strong passwords inline.
+
+  - I assume the javascript code should check the Django settings via AJAX re: password length min/max, etc.
+
 - Force password reset after X amount of time.
 
-- Set inactivity timeouts.
+  - Do these need to persist beyond a restart?
 
 Background
 ----------
