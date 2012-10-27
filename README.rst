@@ -27,6 +27,7 @@ Features
 - Set flags disallowing certain accounts to be locked out.
 - Generate event/email when lock-out occurs.
 - Log every log-on and explicit log-out (not necessary timed out log-ins).
+  - Do these need to persist beyond a restart?
 
 - Track last four passwords and do not allow re-use.
 - Provide JavaScript as well as Django-side checking for 'strong' passwords.
