@@ -26,5 +26,6 @@ setup(
         'axes': 'django-axes',  # Hack-a-round
         'django_pci_auth': 'django_pci_auth',
     },
+    url='https://github.com/aclark4life/django-pci-auth',
     version=VERSION,
 )
