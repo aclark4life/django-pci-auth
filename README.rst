@@ -31,7 +31,10 @@ Features
   - Do these need to persist beyond a restart?
 
 - Track last four passwords and do not allow re-use.
-- Provide JavaScript as well as Django-side checking for 'strong' passwords.
+
+  - Do these need to persist beyond a restart?
+
+- Provide JavaScript to check for strong passwords inline.
 - Force password reset after X amount of time.
 
 - Set inactivity timeouts.
@@ -67,6 +70,7 @@ A list of relevant articles:
 - http://www.insomnihack.com/?p=451
 - http://stackoverflow.com/questions/5226329/enforcing-password-strength-requirements-with-django-contrib-auth-views-password
 - http://stackoverflow.com/questions/13055722/enforcing-password-strength-requirements-in-django
+- http://www.egrappler.com/jquery-strong-password-plugin-power-pwchecker/
 
 Settings
 --------
