@@ -30,11 +30,11 @@ Features
 - Generate event/email when lock-out occurs.
 - Log every log-on and explicit log-out (not necessary timed out log-ins).
 
-  - **XXX Do these need to persist beyond a restart?**
+  - **XXX I assume these need to persist beyond a restart**
 
 - Track last four passwords and do not allow re-use.
 
-  - **XXX Do these need to persist beyond a restart?**
+  - **XXX I assume these need to persist beyond a restart**
 
 - Provide JavaScript to check for strong passwords inline.
 
@@ -42,7 +42,7 @@ Features
 
 - Force password reset after X amount of time.
 
-  - **XXX Do these need to persist beyond a restart?**
+  - **XXX I assume these need to persist beyond a restart**
 
 Background
 ----------
