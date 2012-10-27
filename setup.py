@@ -20,11 +20,9 @@ setup(
     name='django-pci-auth',
     packages=[
         'axes',
-#        'django_pci_auth',
     ],
     package_dir={
-        'axes': 'django-axes',
-#        'django_pci_auth': 'django_pci_auth'
+        '': 'django-axes',
     },
     version=VERSION,
 )
