@@ -12,19 +12,18 @@ setup(
     include_package_data=True,
     install_requires=[
         'docutils',
-#        'django-axes',  # 1.2.5-rc1 has bad setup.py
         'django-passwords',
         'py-bcrypt',
     ],
     long_description=open("README.rst").read(),
     name='django-pci-auth',
     packages=[
-        'axes',
         'django_pci_auth',
+        'axes',
     ],
     package_dir={
-        'axes': 'django-axes',  # Hack-a-round
         'django_pci_auth': 'django_pci_auth',
+        '': 'django-axes',
     },
     url='https://github.com/aclark4life/django-pci-auth',
     version=VERSION,
