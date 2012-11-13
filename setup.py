@@ -11,6 +11,7 @@ setup(
         'Uses "best of" existing libraries then fills in the gaps.',
     include_package_data=True,
     install_requires=[
+        'Django>=1.4',
         'docutils',
         'django-passwords',
         'py-bcrypt',
