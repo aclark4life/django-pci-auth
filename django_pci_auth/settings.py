@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 )
 LANGUAGE_CODE = 'en-us'
+LOGIN_URL = '/admin/'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
