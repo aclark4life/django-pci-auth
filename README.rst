@@ -24,11 +24,11 @@ Features
 
 **XXX Below not done**
 
+- Generate event/email when lock-out occurs.
 - Set flags disallowing certain accounts to be locked out.
 
   - Persist beyond restart
 
-- Generate event/email when lock-out occurs.
 - Log every log-on and explicit log-out (not necessary timed out log-ins).
 
   - Persist beyond restart
