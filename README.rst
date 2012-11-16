@@ -98,6 +98,7 @@ A list of relevant articles:
 - http://stackoverflow.com/questions/13055722/enforcing-password-strength-requirements-in-django
 - http://www.egrappler.com/jquery-strong-password-plugin-power-pwchecker/
 - http://www.insomnihack.com/?p=451
+- http://stackoverflow.com/questions/5179635/django-account-lockout
 
 Settings
 --------
