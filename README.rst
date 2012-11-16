@@ -86,6 +86,7 @@ A list of libraries included:
 
 - http://code.google.com/p/django-brutebuster
 - https://github.com/alexkuhl/django-failedloginblocker
+- https://github.com/brianjaystanley/django-lockout
 
 Articles
 ~~~~~~~~
