@@ -9,9 +9,9 @@ This library integrates the current Django "best of" PCI auth libraries into a s
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
 - https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
 
-Or in some cases, additional functionality may be provided by this package e.g.:
+Or in some cases additional functionality may be provided by this library e.g.:
 
-- Models to persist event data e.g. lockouts
+- Database models to persist event data e.g. lockouts
 
 Features
 --------
