@@ -27,6 +27,7 @@ DATABASES = {
 DEBUG = True
 INSTALLED_APPS = (
     'axes',
+    'django_pci_auth',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
