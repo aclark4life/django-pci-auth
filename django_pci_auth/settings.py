@@ -5,6 +5,7 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
+AUTH_PROFILE_MODULE = 'django_pci_auth.UserProfile'
 # django-axes defaults
 AXES_LOGIN_FAILURE_LIMIT = 3
 AXES_LOCK_OUT_AT_FAILURE = True
