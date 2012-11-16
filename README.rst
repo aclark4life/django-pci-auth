@@ -27,22 +27,25 @@ Features
 **XXX Not done**
 
 - Set flags disallowing certain accounts to be locked out.
+
+  - Persist beyond restart
+
 - Generate event/email when lock-out occurs.
 - Log every log-on and explicit log-out (not necessary timed out log-ins).
 
-  - **XXX I assume these need to persist beyond a restart**
+  - Persist beyond restart
 
 - Track last four passwords and do not allow re-use.
 
-  - **XXX I assume these need to persist beyond a restart**
+  - Persist beyond restart
 
 - Provide JavaScript to check for strong passwords inline.
 
-  - **XXX I assume the javascript code should check the Django settings via AJAX re: password length min/max, etc.**
+  - Javascript code should check the Django settings via AJAX re: password length min/max, etc.
 
 - Force password reset after X amount of time.
 
-  - **XXX I assume these need to persist beyond a restart**
+  - Persist beyond restart
 
 Background
 ----------
