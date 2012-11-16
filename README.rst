@@ -11,7 +11,7 @@ This application integrates the current Django "best of" PCI auth libraries into
 
 Or in some cases, additional functionality may be provided by this package e.g.:
 
-- **XXX Add example**
+- Models to persist event data e.g. lockouts
 
 Features
 --------
