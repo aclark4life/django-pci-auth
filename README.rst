@@ -24,6 +24,10 @@ Features
 
 **XXX Below not done**
 
+- Provide JavaScript to check for strong passwords inline.
+
+  - Javascript code should check the Django settings via AJAX re: password length min/max, etc.
+
 - Generate event/email when lock-out occurs.
 - Set flags disallowing certain accounts to be locked out.
 
@@ -40,10 +44,6 @@ Features
 - Force password reset after X amount of time.
 
   - Persist beyond restart
-
-- Provide JavaScript to check for strong passwords inline.
-
-  - Javascript code should check the Django settings via AJAX re: password length min/max, etc.
 
 Installation
 ------------
