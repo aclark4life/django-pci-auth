@@ -13,18 +13,6 @@ Or in some cases, additional functionality may be provided by this package e.g.:
 
 - Models to persist event data e.g. lockouts
 
-Installation
-------------
-
-Before you use this library in your applications you may wish to demo its functionality. To do so, follow these steps::
-
-    $ virtualenv .
-    $ bin/pip install django-pci-auth
-    $ bin/django-admin.py syncdb --settings=django_pci_auth.settings
-    $ bin/django-admin.py runserver --settings=django_pci_auth.settings
-
-Open http://127.0.0.1:8000/
-
 Features
 --------
 
@@ -58,6 +46,18 @@ Features
 - Force password reset after X amount of time.
 
   - Persist beyond restart
+
+Installation
+------------
+
+Before you use this library in your applications you may wish to demo its functionality. To do so, follow these steps::
+
+    $ virtualenv .
+    $ bin/pip install django-pci-auth
+    $ bin/django-admin.py syncdb --settings=django_pci_auth.settings
+    $ bin/django-admin.py runserver --settings=django_pci_auth.settings
+
+Open http://127.0.0.1:8000/
 
 Background
 ----------
