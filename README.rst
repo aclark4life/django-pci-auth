@@ -33,7 +33,7 @@ Features
 
   - Persist beyond restart
 
-- Log every log-on and explicit log-out (not necessary timed out log-ins).
+- Log every log-on and explicit log-out (not necessary to log timed out log-ins).
 
   - Persist beyond restart
 
