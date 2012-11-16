@@ -16,15 +16,13 @@ Or in some cases, additional functionality may be provided by this package e.g.:
 Features
 --------
 
-**XXX Done**
-
 - Stronger password hashing that allows for selection of hashing algorithm scrypt, bcrypt, PBKDF2, etc. via settings.py. [1]
 - Checking for strong passwords with a default length setting overrideable in settings.py. [2]
 - Integrate strong passwords into Django Admin.
 - Lock out account for n minutes after x failed log-in attempts. [3]
 - Set inactivity timeouts.
 
-**XXX Not done**
+**XXX Below not done**
 
 - Set flags disallowing certain accounts to be locked out.
 
