@@ -27,8 +27,6 @@ DATABASES = {
 }
 DEBUG = True
 INSTALLED_APPS = (
-    'axes',
-    'django_pci_auth',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -37,6 +35,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
+
+    'axes',
+    'django_pci_auth',
 )
 LANGUAGE_CODE = 'en-us'
 LOGIN_URL = '/admin/'

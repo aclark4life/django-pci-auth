@@ -82,6 +82,11 @@ A list of libraries included:
 - https://github.com/codekoala/django-axes
 - https://github.com/dstufft/django-passwords
 
+**XXX Not included yet but may be**
+
+- http://code.google.com/p/django-brutebuster
+- https://github.com/alexkuhl/django-failedloginblocker
+
 Articles
 ~~~~~~~~
 
