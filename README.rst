@@ -37,13 +37,13 @@ Features
 
   - Persist beyond restart
 
-- Provide JavaScript to check for strong passwords inline.
-
-  - Javascript code should check the Django settings via AJAX re: password length min/max, etc.
-
 - Force password reset after X amount of time.
 
   - Persist beyond restart
+
+- Provide JavaScript to check for strong passwords inline.
+
+  - Javascript code should check the Django settings via AJAX re: password length min/max, etc.
 
 Installation
 ------------
