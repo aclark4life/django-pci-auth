@@ -7,7 +7,7 @@ ADMINS = (
 )
 AUTH_PROFILE_MODULE = 'django_pci_auth.UserProfile'
 # django-axes defaults
-AXES_LOGIN_FAILURE_LIMIT = 3
+AXES_LOGIN_FAILURE_LIMIT = 4
 AXES_LOCK_OUT_AT_FAILURE = True
 AXES_USE_USER_AGENT = False
 AXES_COOLOFF_TIME = None
@@ -65,12 +65,12 @@ MANAGERS = ADMINS
 MEDIA_ROOT = ''
 MEDIA_URL = ''
 MIDDLEWARE_CLASSES = (
-    'axes.middleware.FailedLoginMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'axes.middleware.FailedLoginMiddleware',
 )
 # django-passwords defaults
 PASSWORD_MIN_LENGTH = 6
