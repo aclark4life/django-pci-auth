@@ -100,6 +100,7 @@ A list of relevant articles:
 - http://www.insomnihack.com/?p=451
 - http://stackoverflow.com/questions/5179635/django-account-lockout
 - http://kencochrane.net/blog/2012/01/developers-guide-to-pci-compliant-web-applications/
+- http://stackoverflow.com/questions/2693837/django-staff-decorator
 
 Settings
 --------
