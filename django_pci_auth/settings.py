@@ -33,6 +33,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # add 'django_admin_bootstrapped' into the INSTALLED_APPS list before 'django.contrib.admin'
+    'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.admindocs',
 

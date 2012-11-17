@@ -12,8 +12,9 @@ setup(
     include_package_data=True,
     install_requires=[
         'Django>=1.4',
-        'docutils',
+        'django-admin-bootstrapped',
         'django-passwords',
+        'docutils',
         'py-bcrypt',
     ],
     long_description=open("README.rst").read(),
