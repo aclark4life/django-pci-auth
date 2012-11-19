@@ -157,6 +157,19 @@ This software is licensed under the same BSD license that Django is licensed und
 Development
 -----------
 
-.. Note::
+Issues
+~~~~~~
 
-    Django-axes has been included as a git submodule. Due to a bug in setuptools, this only works during installation (i.e. not during "python setup.py develop", see: https://bitbucket.org/tarek/distribute/issue/177/setuppy-develop-doesnt-support-package_dir).
+Django-axes has been included here as a git submodule. But due to a bug in setuptools, this only works during installation (i.e. not during "python setup.py develop". See: https://bitbucket.org/tarek/distribute/issue/177/setuppy-develop-doesnt-support-package_dir). To workaround the issue, try something like::
+
+    from django.core import management
+
+    import sys  # Hack-a-round setuptools develop bug
+    sys.path.append('')
+
+    if __name__ == "__main__":
+        management.execute_from_command_line()
+
+
+
+
