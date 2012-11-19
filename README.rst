@@ -1,6 +1,10 @@
 django-pci-auth
 ===============
 
+.. raw:: html
+
+    Developers please see <a href="#developers">Developers section</a>.
+
 **Django 1.4+ only**
 
 This library integrates the current Django "best of" PCI auth libraries into a single application, then fills in the gaps. Filling gaps may involve making additional decisions for you, as suggested by Django Documentation e.g.:
@@ -169,7 +173,3 @@ Django-axes has been included here as a git submodule. But due to a bug in setup
 
     if __name__ == "__main__":
         management.execute_from_command_line()
-
-
-
-
