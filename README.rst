@@ -153,3 +153,10 @@ This software is licensed under the same BSD license that Django is licensed und
 .. [2] This feature is provided by django-passwords
 .. [3] This feature is provided by django-axes
 
+
+Development
+-----------
+
+.. Note::
+
+    Django-axes has been included as a git submodule. Due to a bug in setuptools, this only works during installation (i.e. not during "python setup.py develop", see: https://bitbucket.org/tarek/distribute/issue/177/setuppy-develop-doesnt-support-package_dir).
