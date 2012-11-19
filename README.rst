@@ -1,8 +1,6 @@
 django-pci-auth
 ===============
 
-`Developers`_
-
 **Django 1.4+ only**
 
 This library integrates the current Django "best of" PCI auth libraries into a single application, then fills in the gaps. Filling gaps may involve making additional decisions for you, as suggested by Django Documentation e.g.:
