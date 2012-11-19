@@ -1,9 +1,7 @@
 django-pci-auth
 ===============
 
-.. raw:: html
-
-    Developers please see <a href="#developers">Developers section</a>.
+`Developers`_
 
 **Django 1.4+ only**
 
