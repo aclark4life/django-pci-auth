@@ -164,7 +164,7 @@ Django-axes has been included here as a git submodule. But due to a bug in setup
 
     from django.core import management
 
-    import sys  # Hack-a-round setuptools develop bug
+    import sys  # Hack-a-round setuptools 'python setup.py develop' bug
     sys.path.append('')
 
     if __name__ == "__main__":
