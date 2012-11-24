@@ -1,8 +1,9 @@
 from django import forms
 from django.conf import settings
 from django.contrib import auth
+from django.contrib.auth.hashers import check_password
 from passwords.validators import PASSWORD_MIN_LENGTH
-
+from models import PasswordLog
 
 # http://stackoverflow.com/questions/5226329/\
 # enforcing-password-strength-requirements-with-django-contrib-auth-views\
@@ -31,5 +32,12 @@ class ValidatingPasswordChangeForm(auth.forms.PasswordChangeForm):
                 " least one digit or punctuation character.")
 
         # ... any other validation you want ...
+        if self.user:
+            # Make sure password hasn't been used recently
+            p_logs = PasswordLog.objects.filter(user=self.user)
+            for p_log in p_logs:
+                if check_password(password1, p_log.password):
+                    raise forms.ValidationError(
+                    "That password was used recently. Please pick a new one.")
 
         return password1
