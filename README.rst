@@ -57,6 +57,47 @@ Before you use this library in your applications you may wish to demo its functi
 
 Open http://127.0.0.1:8000/
 
+
+Models
+------
+Here are the models that are currently in this project.
+
+UserProfile
+~~~~~~~~~~~
+Profile model that stores two fields that are required 
+(nolockout, and password_last_changed). If you already have a Profile model
+you will need to add these fields to it.
+
+Fields:
+    - user (ForeignKey to User)
+    - nolockout (Boolean)
+    - password_last_changed (datetime)
+
+AccessLog
+~~~~~~~~~
+A permeant log that tracks all of the access attempts.
+
+Fields:
+    - user_agent (CharField 255)
+    - ip_address (IpAddress)
+    - user (ForeignKey User)
+    - trusted (Boolean)
+    - http_accept (CharField 255 max)
+    - path_info (CharField 255 max)
+    - attempt_time (datetime)
+    - logout_time (datetime)
+
+PasswordLog
+~~~~~~~~~~~
+Keeps track of the recently used passwords for a user, so that
+they aren't allowed to reuse the same ones over and over again.
+
+Fields:
+    - user (ForeignKey to User)
+    - password (CharField 128 max)
+    - create_date (datetime)
+
+
 Background
 ----------
 
@@ -123,6 +164,16 @@ This is a built-in feature in Django 1.4+. Documented here for convenience::
         'django.contrib.auth.hashers.MD5PasswordHasher',
         'django.contrib.auth.hashers.CryptPasswordHasher',
     )
+
+Password Reuse
+~~~~~~~~~~~~~~
+
+How many old passwords will you store? This will prevent users from using the
+same password over again. It will keep the newest ones around. As they change
+their password, the older ones will be removed.
+
+    OLD_PASSWORD_STORAGE_NUM = 4
+
 
 Screenshots
 -----------

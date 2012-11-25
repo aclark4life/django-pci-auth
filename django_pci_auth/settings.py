@@ -6,6 +6,10 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 AUTH_PROFILE_MODULE = 'django_pci_auth.UserProfile'
+
+# how many old password do you want to store, so they can't reuse.
+OLD_PASSWORD_STORAGE_NUM = 4
+
 # django-axes defaults
 AXES_LOGIN_FAILURE_LIMIT = 4
 AXES_LOCK_OUT_AT_FAILURE = True
@@ -103,7 +107,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
-SECRET_KEY = ''
+SECRET_KEY = 'abc123'
 # From https://docs.djangoproject.com/en/1.4/topics/http/sessions/
 SESSION_COOKIE_AGE = 7200
 TEMPLATE_LOADERS = (
