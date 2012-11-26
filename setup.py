@@ -12,6 +12,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'Django>=1.4',
+        'django-axes',
         'django-admin-bootstrapped',
         'django-passwords',
         'docutils',
@@ -19,14 +20,7 @@ setup(
     ],
     long_description=open("README.rst").read(),
     name='django-pci-auth',
-    packages=[
-        'django_pci_auth',
-        'axes',
-    ],
-    package_dir={
-        'django_pci_auth': 'django_pci_auth',
-        '': 'django-axes',
-    },
+    packages=find_packages(),
     url='https://github.com/aclark4life/django-pci-auth',
     version=VERSION,
 )
