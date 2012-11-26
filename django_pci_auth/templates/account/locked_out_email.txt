@@ -1,0 +1,1 @@
+This is just a friendly email to let you know that your account at {{site_name}} has been locked because of too many bad login attempts.
