@@ -21,29 +21,17 @@ Features
 - Integrate strong passwords into Django Admin.
 - Lock out account for n minutes after x failed log-in attempts. [3]
 - Set inactivity timeouts.
+- Generate event/email when lock-out occurs.
+- Set flags disallowing certain accounts to be locked out.
+- Log every log-on and explicit log-out (not necessary to log timed out log-ins).
+- Track last four passwords and do not allow re-use.
+- Force password reset after X amount of time.
 
 **XXX Below not done**
 
 - Provide JavaScript to check for strong passwords inline.
 
   - Javascript code should check the Django settings via AJAX re: password length min/max, etc.
-
-- Generate event/email when lock-out occurs.
-- Set flags disallowing certain accounts to be locked out.
-
-  - Persist beyond restart
-
-- Log every log-on and explicit log-out (not necessary to log timed out log-ins).
-
-  - Persist beyond restart
-
-- Track last four passwords and do not allow re-use.
-
-  - Persist beyond restart
-
-- Force password reset after X amount of time.
-
-  - Persist beyond restart
 
 Installation
 ------------
@@ -56,47 +44,6 @@ Before you use this library in your applications you may wish to demo its functi
     $ bin/django-admin.py runserver --settings=django_pci_auth.settings
 
 Open http://127.0.0.1:8000/
-
-
-Models
-------
-Here are the models that are currently in this project.
-
-UserProfile
-~~~~~~~~~~~
-Profile model that stores two fields that are required 
-(nolockout, and password_last_changed). If you already have a Profile model
-you will need to add these fields to it.
-
-Fields:
-    - user (ForeignKey to User)
-    - nolockout (Boolean)
-    - password_last_changed (datetime)
-
-AccessLog
-~~~~~~~~~
-A permeant log that tracks all of the access attempts.
-
-Fields:
-    - user_agent (CharField 255)
-    - ip_address (IpAddress)
-    - user (ForeignKey User)
-    - trusted (Boolean)
-    - http_accept (CharField 255 max)
-    - path_info (CharField 255 max)
-    - attempt_time (datetime)
-    - logout_time (datetime)
-
-PasswordLog
-~~~~~~~~~~~
-Keeps track of the recently used passwords for a user, so that
-they aren't allowed to reuse the same ones over and over again.
-
-Fields:
-    - user (ForeignKey to User)
-    - password (CharField 128 max)
-    - create_date (datetime)
-
 
 Background
 ----------
@@ -168,12 +115,9 @@ This is a built-in feature in Django 1.4+. Documented here for convenience::
 Password Reuse
 ~~~~~~~~~~~~~~
 
-How many old passwords will you store? This will prevent users from using the
-same password over again. It will keep the newest ones around. As they change
-their password, the older ones will be removed.
+How many old passwords will you store? This will prevent users from using the same password over again. It will keep the newest ones around. As they change their password, the older ones will be removed.
 
     OLD_PASSWORD_STORAGE_NUM = 4
-
 
 Screenshots
 -----------
@@ -199,6 +143,50 @@ License
 This software is licensed under the same BSD license that Django is licensed under. See: `LICENSE`_.
 
 .. _`LICENSE`: https://github.com/aclark4life/django-pci-auth/blob/master/LICENSE
+
+
+Developer
+---------
+
+Models
+~~~~~~
+
+These models help provide the features listed above and are either included with django-pci-auth or one of its dependencies.
+
+UserProfile
++++++++++++
+
+Profile model that stores two fields that are required (nolockout, and password_last_changed). If you already have a Profile model you will need to add these fields to it.
+
+Fields:
+    - user (ForeignKey to User)
+    - nolockout (Boolean)
+    - password_last_changed (datetime)
+
+AccessLog
++++++++++
+
+A permeant log that tracks all of the access attempts.
+
+Fields:
+    - user_agent (CharField 255)
+    - ip_address (IpAddress)
+    - user (ForeignKey User)
+    - trusted (Boolean)
+    - http_accept (CharField 255 max)
+    - path_info (CharField 255 max)
+    - attempt_time (datetime)
+    - logout_time (datetime)
+
+PasswordLog
++++++++++++
+
+Keeps track of the recently used passwords for a user, so that they aren't allowed to reuse the same ones over and over again.
+
+Fields:
+    - user (ForeignKey to User)
+    - password (CharField 128 max)
+    - create_date (datetime)
 
 .. [1] This feature is included with Django 1.4+
 .. [2] This feature is provided by django-passwords
