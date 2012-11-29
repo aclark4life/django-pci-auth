@@ -203,20 +203,3 @@ This software is licensed under the same BSD license that Django is licensed und
 .. [1] This feature is included with Django 1.4+
 .. [2] This feature is provided by django-passwords
 .. [3] This feature is provided by django-axes
-
-
-Development
------------
-
-Issues
-~~~~~~
-
-Django-axes has been included here as a git submodule. But due to a bug in setuptools, this only works during installation (i.e. not during "python setup.py develop". See: https://bitbucket.org/tarek/distribute/issue/177/setuppy-develop-doesnt-support-package_dir). To workaround the issue, try something like::
-
-    from django.core import management
-
-    import sys  # Hack-a-round setuptools 'python setup.py develop' bug
-    sys.path.append('')
-
-    if __name__ == "__main__":
-        management.execute_from_command_line()
