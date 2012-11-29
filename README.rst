@@ -45,23 +45,6 @@ Before you use this library in your applications you may wish to demo its functi
 
 Open http://127.0.0.1:8000/
 
-Background
-----------
-
-PCI is complex. Here is a bit of background on the subject. Inasmuch as it's possible to summarize here.
-
-Levels
-~~~~~~
-
-**XXX Do we need to worry about levels?**
-
-- PCI Compliance Level 1 - Merchants processing over 6 million Visa transactions annually (all channels) or Global merchants identified as Level 1 by any Visa region
-- PCI Compliance Level 2 - Merchants processing 1 million to 6 million Visa transactions annually (all channels)
-- PCI Compliance Level 3 - Merchants processing 20,000 to 1 million Visa e-commerce transactions annually
-- PCI Compliance Level 4 - Merchants processing less than 20,000 Visa e-commerce transactions annually and all other merchants processing up to 1 million Visa transactions annually
-
-Via: http://www.elementps.com/merchants/pci-dss/compliance-level/
-
 Libraries
 ~~~~~~~~~
 
@@ -89,6 +72,7 @@ A list of relevant articles:
 - http://stackoverflow.com/questions/5179635/django-account-lockout
 - http://kencochrane.net/blog/2012/01/developers-guide-to-pci-compliant-web-applications/
 - http://stackoverflow.com/questions/2693837/django-staff-decorator
+- http://www.elementps.com/merchants/pci-dss/compliance-level/
 
 Settings
 --------
