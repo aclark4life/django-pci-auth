@@ -12,7 +12,9 @@ setup(
     include_package_data=True,
     install_requires=[
         'Django>=1.4',
-        'django-axes>=1.2.5',
+        'django-axes==1.2.5',  # XXX Never do this. Only Doing it here because 
+                                # pkg_resources thinks 1.2.5-rc1 is newer than
+                                 # 1.2.5
         'django-admin-bootstrapped',
         'django-passwords',
         'docutils',
