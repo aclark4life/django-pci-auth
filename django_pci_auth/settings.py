@@ -7,8 +7,6 @@ ADMINS = (
 )
 AUTH_PROFILE_MODULE = 'django_pci_auth.UserProfile'
 
-# how many old password do you want to store, so they can't reuse.
-OLD_PASSWORD_STORAGE_NUM = 4
 
 # django-axes defaults
 AXES_LOGIN_FAILURE_LIMIT = 4
@@ -76,6 +74,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'axes.middleware.FailedLoginMiddleware',
 )
+
+# how many old password do you want to store, so they can't be reused.
+OLD_PASSWORD_STORAGE_NUM = 4
+
 # django-passwords defaults
 PASSWORD_MIN_LENGTH = 6
 PASSWORD_MAX_LENGTH = None

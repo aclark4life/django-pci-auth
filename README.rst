@@ -52,12 +52,7 @@ A list of libraries included:
 
 - https://github.com/codekoala/django-axes
 - https://github.com/dstufft/django-passwords
-
-**XXX Not included yet but may be**
-
-- http://code.google.com/p/django-brutebuster
-- https://github.com/alexkuhl/django-failedloginblocker
-- https://github.com/brianjaystanley/django-lockout
+- http://code.google.com/p/py-bcrypt/
 
 Articles
 ~~~~~~~~
@@ -99,7 +94,7 @@ This is a built-in feature in Django 1.4+. Documented here for convenience::
 Password Reuse
 ~~~~~~~~~~~~~~
 
-How many old passwords will you store? This will prevent users from using the same password over again. It will keep the newest ones around. As they change their password, the older ones will be removed.
+How many old passwords will you store? This feature will prevent users from using the same passwords over and over again; it will keep the last ``OLD_PASSWORD_STORAGE_NUM`` number of passwords around and remove anything older. E.g.::
 
     OLD_PASSWORD_STORAGE_NUM = 4
 
