@@ -50,9 +50,9 @@ Libraries
 
 A list of libraries included:
 
+- http://code.google.com/p/py-bcrypt/
 - https://github.com/codekoala/django-axes
 - https://github.com/dstufft/django-passwords
-- http://code.google.com/p/py-bcrypt/
 
 Articles
 ~~~~~~~~
@@ -127,45 +127,48 @@ This software is licensed under the same BSD license that Django is licensed und
 Developer
 ---------
 
-Models
-~~~~~~
-
-These models help provide the features listed above and are either included with django-pci-auth or one of its dependencies.
+These **models** help provide the features listed above and are either included with django-pci-auth or one of its dependencies.
 
 UserProfile
-+++++++++++
+~~~~~~~~~~~
 
 Profile model that stores two fields that are required (nolockout, and password_last_changed). If you already have a Profile model you will need to add these fields to it.
 
 Fields:
-    - user (ForeignKey to User)
-    - nolockout (Boolean)
-    - password_last_changed (datetime)
+
+- user (ForeignKey to User)
+- nolockout (Boolean)
+- password_last_changed (datetime)
 
 AccessLog
-+++++++++
+~~~~~~~~~
 
 A permeant log that tracks all of the access attempts.
 
 Fields:
-    - user_agent (CharField 255)
-    - ip_address (IpAddress)
-    - user (ForeignKey User)
-    - trusted (Boolean)
-    - http_accept (CharField 255 max)
-    - path_info (CharField 255 max)
-    - attempt_time (datetime)
-    - logout_time (datetime)
+
+- user_agent (CharField 255)
+- ip_address (IpAddress)
+- user (ForeignKey User)
+- trusted (Boolean)
+- http_accept (CharField 255 max)
+- path_info (CharField 255 max)
+- attempt_time (datetime)
+- logout_time (datetime)
 
 PasswordLog
-+++++++++++
+~~~~~~~~~~~
 
 Keeps track of the recently used passwords for a user, so that they aren't allowed to reuse the same ones over and over again.
 
 Fields:
-    - user (ForeignKey to User)
-    - password (CharField 128 max)
-    - create_date (datetime)
+
+- user (ForeignKey to User)
+- password (CharField 128 max)
+- create_date (datetime)
+
+Notes
+=====
 
 .. [1] This feature is included with Django 1.4+
 .. [2] This feature is provided by django-passwords
