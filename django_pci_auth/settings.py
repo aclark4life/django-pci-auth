@@ -29,6 +29,7 @@ DATABASES = {
 }
 DEBUG = True
 INSTALLED_APPS = (
+    'dajaxice',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -108,6 +109,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'dajaxice.finders.DajaxiceFinder',
 )
 SECRET_KEY = 'abc123'
 # From https://docs.djangoproject.com/en/1.4/topics/http/sessions/
@@ -115,7 +117,17 @@ SESSION_COOKIE_AGE = 7200
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
+    'django.template.loaders.eggs.Loader',  # http://django-dajaxice.readthedocs.org/en/latest/installation.html#installing-dajaxice
+)
+# http://django-dajaxice.readthedocs.org/en/latest/installation.html#installing-dajaxice
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'django.core.context_processors.request',
+    'django.contrib.messages.context_processors.messages'
 )
 TEMPLATE_DEBUG = DEBUG
 TEMPLATE_DIRS = (

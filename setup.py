@@ -16,6 +16,7 @@ setup(
                                 # pkg_resources thinks 1.2.5-rc1 is newer than
                                  # 1.2.5
         'django-admin-bootstrapped',
+        'django-dajaxice',
         'django-passwords',
         'docutils',
         'py-bcrypt',

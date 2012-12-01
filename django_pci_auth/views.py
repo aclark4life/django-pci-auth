@@ -1,7 +1,9 @@
-from django.shortcuts import render_to_response
-from django.contrib.auth.decorators import login_required
-from django.template.response import TemplateResponse
+from dajaxice.decorators import dajaxice_register
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render_to_response
+from django.template.response import TemplateResponse
+from django.utils import simplejson
 
 from models import PasswordLog, UserProfile
 
@@ -59,3 +61,8 @@ def password_change_done(request,
         context.update(extra_context)
     return TemplateResponse(request, template_name, context,
                             current_app=current_app)
+
+
+@dajaxice_register
+def sayhello(request):
+    return simplejson.dumps({'message':'Hello World'})
