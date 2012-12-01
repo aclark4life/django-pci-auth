@@ -3,13 +3,13 @@ django-pci-auth
 
 **Django 1.4+ only**
 
-This library integrates the current Django "best of" PCI auth libraries into a single application, then fills in the gaps. Filling gaps may involve making additional decisions for you, as suggested by Django Documentation e.g.:
+This library integrates the current Django "best of" PCI auth libraries into a single application, then fills in the gaps. Filling in the gaps may involve making additional decisions for you e.g.:
 
 - https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
 - https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
 
-Or in some cases additional functionality may be provided by this library e.g.:
+Or adding additional functionality e.g.:
 
 - Database models to persist event data e.g. lockouts
 
