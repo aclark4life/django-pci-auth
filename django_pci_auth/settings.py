@@ -29,7 +29,7 @@ DATABASES = {
 }
 DEBUG = True
 INSTALLED_APPS = (
-    'dajaxice',
+    'dajaxice',  # django-dajaxice
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -42,7 +42,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
 
-    'axes',
+    'axes',  # django-axes
+    'passwords',  # django-passwords
     'django_pci_auth',
 )
 LANGUAGE_CODE = 'en-us'
