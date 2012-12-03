@@ -80,3 +80,9 @@ def check_old_password(request, password):
 @dajaxice_register
 def min_pass_len(request):
     return simplejson.dumps({'message':PASSWORD_MIN_LENGTH})
+
+
+@dajaxice_register
+def check_new_password1(request, password):
+    results = utils.check_password_length(password)
+    return simplejson.dumps({'message':results})

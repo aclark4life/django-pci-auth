@@ -43,8 +43,8 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 
     'axes',  # django-axes
-    'passwords',  # django-passwords
     'django_pci_auth',
+    'passwords',  # django-passwords
 )
 LANGUAGE_CODE = 'en-us'
 LOGIN_URL = '/admin/'
