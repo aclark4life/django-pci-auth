@@ -17,6 +17,7 @@ import utils
 
 
 OLD_PASSWORD_STORAGE_NUM = getattr(settings, "OLD_PASSWORD_STORAGE_NUM", 4)
+PASSWORD_MIN_LENGTH = str(getattr(settings, "PASSWORD_MIN_LENGTH", ''))
 
 
 def index(request):
@@ -70,3 +71,8 @@ def check_old_password(request, password):
     user = User.objects.get(username__exact=request.user)
     results = user.check_password(password)
     return simplejson.dumps({'message':results})
+
+
+@dajaxice_register
+def min_pass_len(request):
+    return simplejson.dumps({'message':PASSWORD_MIN_LENGTH})
