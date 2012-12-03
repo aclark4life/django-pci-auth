@@ -70,6 +70,10 @@ def password_change_done(request,
 def check_old_password(request, password):
     user = User.objects.get(username__exact=request.user)
     results = user.check_password(password)
+    if results:
+        results = '<span class="alert alert-success">OK</span>'
+    else:
+        results = '<span class="alert alert-error">Bad password</span>'
     return simplejson.dumps({'message':results})
 
 
