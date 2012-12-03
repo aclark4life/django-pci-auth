@@ -1,12 +1,11 @@
 from dajaxice.decorators import dajaxice_register
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.shortcuts import render_to_response
 from django.template.response import TemplateResponse
 from django.utils import simplejson
-
 from models import PasswordLog, UserProfile
-
 # django 1.4 has a new timezone aware now() use if available.
 try:
     from django.utils.timezone import now
@@ -14,12 +13,15 @@ except ImportError:
     # fall back to none timezone aware now()
     from datetime import datetime
     now = datetime.now
+import utils
 
 
 OLD_PASSWORD_STORAGE_NUM = getattr(settings, "OLD_PASSWORD_STORAGE_NUM", 4)
 
+
 def index(request):
     return render_to_response('django_pci_auth.html')
+
 
 # taken and altered from django.contrib.auth.views.password_change_done to add
 # code for logging password changes.
@@ -64,5 +66,7 @@ def password_change_done(request,
 
 
 @dajaxice_register
-def sayhello(request):
-    return simplejson.dumps({'message':'Hello World'})
+def check_old_password(request, password):
+    user = User.objects.get(username__exact=request.user)
+    results = user.check_password(password)
+    return simplejson.dumps({'message':results})
