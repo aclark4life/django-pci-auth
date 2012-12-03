@@ -116,6 +116,11 @@ Failed login attempts log
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-axes.png
 
+AJAX Validation
+~~~~~~~~~~~~~~~
+
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-ajax.png
+
 License
 -------
 
