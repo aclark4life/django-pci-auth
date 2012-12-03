@@ -101,25 +101,20 @@ How many old passwords will you store? This feature will prevent users from usin
 Screenshots
 -----------
 
-Overview of features
-~~~~~~~~~~~~~~~~~~~~
+Overview of features (via default index view)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-index.png
 
-Password length enforcement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Password length enforcement (with AJAX validation)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot.png
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-ajax.png
 
 Failed login attempts log
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-axes.png
-
-AJAX Validation
-~~~~~~~~~~~~~~~
-
-.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-ajax.png
 
 License
 -------
