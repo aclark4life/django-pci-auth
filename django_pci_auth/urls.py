@@ -14,9 +14,9 @@ dajaxice_autodiscover()
 
 urlpatterns = patterns(
     '',  # prefix
+    url(dajaxice_config.dajaxice_url, include('dajaxice.urls')),
     (r'^admin/doc/', include(django.contrib.admindocs.urls)),
     (r'^admin/', include(admin.site.urls)),
-    url(dajaxice_config.dajaxice_url, include('dajaxice.urls')),
     (r'^change_password/$', password_change,
         {'password_change_form': ValidatingPasswordChangeForm,
         'post_change_redirect' : '/password_changed/'}),
