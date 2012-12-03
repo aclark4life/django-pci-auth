@@ -101,8 +101,8 @@ How many old passwords will you store? This feature will prevent users from usin
 Screenshots
 -----------
 
-Overview of features (via default index view)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Overview of features (via index view)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-index.png
 
