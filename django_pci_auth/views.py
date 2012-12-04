@@ -14,6 +14,9 @@ except ImportError:
     from datetime import datetime
     now = datetime.now
 
+# XXX Can we get the "real" message string from somewhere?
+BAD_PASS_MSG = ('Your old password was entered incorrectly. '
+    'Please enter it again.')
 
 OLD_PASSWORD_STORAGE_NUM = getattr(settings, "OLD_PASSWORD_STORAGE_NUM", 4)
 PASSWORD_MIN_LENGTH = str(getattr(settings, "PASSWORD_MIN_LENGTH", ''))
@@ -77,7 +80,7 @@ def check_old_password(request, password):
     if results:
         results = '<span class="alert alert-success">OK</span>'
     else:
-        results = '<span class="alert alert-error">Bad password</span>'
+        results = '<span class="alert alert-error">%s</span>' % BAD_PASS_MSG
     return simplejson.dumps({'message':results})
 
 

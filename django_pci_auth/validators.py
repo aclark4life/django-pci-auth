@@ -16,7 +16,7 @@ class RecentlyUsedValidator(object):
         for p_log in p_logs:
             if not check_password(value, p_log.password):
                 raise ValidationError(
-                    self.message % _("Must not be used recently"),
+                    self.message % _("Must not be recently used"),
                     code=self.code)
 
 
