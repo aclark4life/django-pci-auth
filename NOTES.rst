@@ -2,6 +2,8 @@
 Notes
 ======================
 
+Notes on other similar (or included) apps
+
 Django-axes
 -----------
 
