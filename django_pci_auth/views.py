@@ -87,3 +87,7 @@ def check_new_password1(request, password):
     return simplejson.dumps({'message':results})
 
 
+@dajaxice_register
+def check_new_password2(request, password):
+    results = '<span class="alert alert-success">OK</span>'
+    return simplejson.dumps({'message':results})
