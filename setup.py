@@ -21,8 +21,10 @@ setup(
         'docutils',
         'py-bcrypt',
     ],
-    long_description=(open("README.rst").read() + '\n' +
-        open("CHANGES.txt").read()),
+    long_description=(
+        open("README.rst").read() + '\n' +
+        open(os.path.join("docs", "CHANGES.txt")).read()
+    ),
     name='django-pci-auth',
     packages=find_packages(),
     url='https://github.com/aclark4life/django-pci-auth',

@@ -1,8 +1,0 @@
-Changes
-=======
-
-0.0.4 (2012-11-28)
-------------------
-
-- Pre-release, includes most features promised.
-  [aclark4life]

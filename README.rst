@@ -3,7 +3,7 @@ django-pci-auth
 
 **Django 1.4+ only**
 
-This library integrates the current Django "best of" PCI auth libraries into a single application, then fills in the gaps. Filling in the gaps may involve making additional decisions for you e.g.:
+This library integrates the current Django "best of" PCI auth libraries into a single application, then fills in the gaps. Filling in the gaps may involve making decisions for you e.g.:
 
 - https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
@@ -11,7 +11,7 @@ This library integrates the current Django "best of" PCI auth libraries into a s
 
 Or adding additional functionality e.g.:
 
-- Database models to persist event data e.g. lockouts
+- Database models to persist event data e.g. lockouts (See: docs/DEVELOPERS.txt)
 
 Features
 --------
@@ -26,12 +26,7 @@ Features
 - Log every log-on and explicit log-out (not necessary to log timed out log-ins).
 - Track last four passwords and do not allow re-use.
 - Force password reset after X amount of time.
-
-**XXX Below not done**
-
 - Provide JavaScript to check for strong passwords inline.
-
-  - Javascript code should check the Django settings via AJAX re: password length min/max, etc.
 
 Installation
 ------------
@@ -105,17 +100,17 @@ Screenshots
 Overview of features (via index view)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-index.png
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/docs/screenshot-index.png
 
 Password length enforcement (with AJAX validation)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-ajax.png
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/docs/screenshot-ajax.png
 
 Failed login attempts log
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/screenshot-axes.png
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/docs/screenshot-axes.png
 
 License
 -------
