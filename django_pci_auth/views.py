@@ -16,6 +16,7 @@ except ImportError:
 
 
 OLD_PASSWORD_STORAGE_NUM = getattr(settings, "OLD_PASSWORD_STORAGE_NUM", 4)
+PASSWORD_MIN_LENGTH = str(getattr(settings, "PASSWORD_MIN_LENGTH", ''))
 
 
 def index(request):
@@ -65,6 +66,11 @@ def password_change_done(request,
 
 
 @dajaxice_register
+def check_setting_password_length(request):
+    return simplejson.dumps({'message':PASSWORD_MIN_LENGTH})
+
+
+@dajaxice_register
 def check_old_password(request, password):
     user = User.objects.get(username__exact=request.user)
     results = user.check_password(password)
@@ -73,3 +79,11 @@ def check_old_password(request, password):
     else:
         results = '<span class="alert alert-error">Bad password</span>'
     return simplejson.dumps({'message':results})
+
+
+@dajaxice_register
+def check_new_password1(request, password):
+    results = '<span class="alert alert-success">OK</span>'
+    return simplejson.dumps({'message':results})
+
+
