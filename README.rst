@@ -11,7 +11,7 @@ This library integrates the current Django "best of" PCI auth libraries into a s
 
 And adding additional functionality e.g.:
 
-- Database models to persist event data e.g. lockouts (See: docs/DEVELOPERS.txt)
+- Database models to persist event data e.g. lockouts (See: docs/MODELS.rst)
 
 Features
 --------
