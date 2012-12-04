@@ -1,5 +1,6 @@
 # additional django-passwords validators
 from django.contrib.auth.hashers import check_password
+from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 # local
 from models import PasswordLog
@@ -9,16 +10,16 @@ class RecentlyUsedValidator(object):
     message = _("Recently used (%s)")
     code = "recently_used"
 
-    def __init__(self):
+    def __init__(self, user=None):
         self.user = user
 
-    def __call__(self, user, password):
+    def __call__(self, value):
         # Make sure password hasn't been used recently
-        p_logs = PasswordLog.objects.filter(user=user)
+        p_logs = PasswordLog.objects.filter(user=self.user)
         for p_log in p_logs:
-            if not check_password(password, p_log.password):
+            if not check_password(value, p_log.password):
                 raise ValidationError(
-                    self.message % _("Must not be used recently"), 
+                    self.message % _("Must not be used recently"),
                     code=self.code)
 
 
