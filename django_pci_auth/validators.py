@@ -10,12 +10,9 @@ class RecentlyUsedValidator(object):
     message = _("Recently used (%s)")
     code = "recently_used"
 
-    def __init__(self, user=None):
-        self.user = user
-
     def __call__(self, value):
         # Make sure password hasn't been used recently
-        p_logs = PasswordLog.objects.filter(user=self.user)
+        p_logs = PasswordLog.objects.filter(user='admin')  # XXX Need real user
         for p_log in p_logs:
             if not check_password(value, p_log.password):
                 raise ValidationError(
