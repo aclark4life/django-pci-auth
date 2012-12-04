@@ -2,7 +2,7 @@ from setuptools import find_packages
 from setuptools import setup
 import os
 
-VERSION = '0.0.4'
+VERSION = '0.0.5'
 
 setup(
     author='Alex Clark',
@@ -12,9 +12,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'Django>=1.4',
-        'django-axes==1.2.5',  # XXX Never do this. Only Doing it here because 
-                                # pkg_resources thinks 1.2.5-rc1 is newer than
-                                 # 1.2.5
+        'django-axes',
         'django-admin-bootstrapped',
         'django-dajaxice',
         'django-passwords',
