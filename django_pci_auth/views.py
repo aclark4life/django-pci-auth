@@ -30,8 +30,6 @@ def password_change_done(request,
                          template_name='registration/password_change_done.html',
                          current_app=None, extra_context=None):
 
-    import pdb ; pdb.set_trace()
-
     # update the password last changed date on profile.
     user = request.user
     try:
