@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-import signals
+
 
 class UserProfile(models.Model):
     # This field is required.
@@ -10,6 +10,7 @@ class UserProfile(models.Model):
     # Other fields here
     nolockout = models.BooleanField()
     password_last_changed = models.DateTimeField(auto_now_add=True)
+
 
 class PasswordLog(models.Model):
     user = models.ForeignKey(User)
