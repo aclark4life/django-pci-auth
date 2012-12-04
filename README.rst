@@ -97,7 +97,7 @@ How many old passwords will you store? This feature will prevent users from usin
 Screenshots
 -----------
 
-Overview of features (via index view)
+Feature overview (via index view)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/docs/screenshot-index.png
@@ -120,7 +120,7 @@ This software is licensed under the same BSD license that Django is licensed und
 .. _`LICENSE`: https://github.com/aclark4life/django-pci-auth/blob/master/LICENSE
 
 Notes
-=====
+-----
 
 .. [1] This feature is included with Django 1.4+
 .. [2] This feature is provided by django-passwords
