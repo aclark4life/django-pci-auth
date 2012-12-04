@@ -112,6 +112,11 @@ Failed login attempts log
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/docs/screenshot-axes.png
 
+Recently used password log
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/docs/screenshot-axes.png
+
 License
 -------
 
