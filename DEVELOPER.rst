@@ -1,7 +1,7 @@
 Models
 ------
 
-These models help provide the features listed above and are either included with django-pci-auth or one of its dependencies.
+The following models are included with django-pci-auth (or one of its dependencies):
 
 UserProfile
 ~~~~~~~~~~~
