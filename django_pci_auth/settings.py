@@ -25,7 +25,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # add 'django_admin_bootstrapped' into the INSTALLED_APPS list before 'django.contrib.admin'
+    # add 'django_admin_bootstrapped' into the INSTALLED_APPS list before
+    # 'django.contrib.admin'
     'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.admindocs',
@@ -82,9 +83,12 @@ SECRET_KEY = 'abc123'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-    'django.template.loaders.eggs.Loader',  # http://django-dajaxice.readthedocs.org/en/latest/installation.html#installing-dajaxice
+    # http://django-dajaxice.readthedocs.org/en/latest/installation.html
+    # #installing-dajaxice
+    'django.template.loaders.eggs.Loader',
 )
-# http://django-dajaxice.readthedocs.org/en/latest/installation.html#installing-dajaxice
+# http://django-dajaxice.readthedocs.org/en/latest/installation.html\
+# #installing-dajaxice
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.debug',
