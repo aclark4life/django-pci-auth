@@ -139,9 +139,16 @@ AXES_VERBOSE = True
 OLD_PASSWORD_STORAGE_NUM = 4
 
 # django-passwords defaults
-PASSWORD_MIN_LENGTH = 6
-PASSWORD_MAX_LENGTH = None
-PASSWORD_DICTIONARY = None
-PASSWORD_MATCH_THRESHOLD = 0.9
-#PASSWORD_COMMON_SEQUENCES =
-PASSWORD_COMPLEXITY = None
+PASSWORD_MIN_LENGTH = 6 # Defaults to 6
+PASSWORD_MAX_LENGTH = 120 # Defaults to None
+PASSWORD_DICTIONARY = "/usr/share/dict/words" # Defaults to None
+PASSWORD_MATCH_THRESHOLD = 0.9 # Defaults to 0.9, should be 0.0 - 1.0 where 1.0 means exactly the same.
+PASSWORD_COMMON_SEQUENCES = [] # Should be a list of strings, see passwords/validators.py for default
+PASSWORD_COMPLEXITY = { # You can ommit any or all of these for no limit for that particular set
+    "UPPER": 1,       # Uppercase
+    "LOWER": 1,       # Lowercase
+    "DIGITS": 1,      # Digits
+    "PUNCTUATION": 1, # Punctuation (string.punctuation)
+    "NON ASCII": 1,   # Non Ascii (ord() >= 128)
+    "WORDS": 1        # Words (substrings seperates by a whitespace)
+}
