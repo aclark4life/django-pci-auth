@@ -59,14 +59,15 @@ Articles
 
 A list of relevant articles:
 
+- https://docs.djangoproject.com/en/dev/topics/auth/
+- http://kencochrane.net/blog/2012/01/developers-guide-to-pci-compliant-web-applications/
+- http://stackoverflow.com/questions/2693837/django-staff-decorator
 - http://stackoverflow.com/questions/3566174/django-increase-inactivity-timeout
+- http://stackoverflow.com/questions/5179635/django-account-lockout
 - http://stackoverflow.com/questions/5226329/enforcing-password-strength-requirements-with-django-contrib-auth-views-password
 - http://stackoverflow.com/questions/13055722/enforcing-password-strength-requirements-in-django
 - http://www.egrappler.com/jquery-strong-password-plugin-power-pwchecker/
 - http://www.insomnihack.com/?p=451
-- http://stackoverflow.com/questions/5179635/django-account-lockout
-- http://kencochrane.net/blog/2012/01/developers-guide-to-pci-compliant-web-applications/
-- http://stackoverflow.com/questions/2693837/django-staff-decorator
 - http://www.elementps.com/merchants/pci-dss/compliance-level/
 
 Settings
