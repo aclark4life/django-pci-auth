@@ -12,7 +12,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'Django>=1.4',
-        'django-axes',
+        'django-axes>=1.2.6',
         'django-admin-bootstrapped',
         'django-dajaxice',
         'django-passwords',
