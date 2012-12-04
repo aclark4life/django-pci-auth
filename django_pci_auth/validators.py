@@ -12,7 +12,7 @@ class RecentlyUsedValidator(object):
 
     def __call__(self, value):
         # Make sure password hasn't been used recently
-        p_logs = PasswordLog.objects.filter(user='admin')  # XXX Need real user
+        p_logs = PasswordLog.objects.filter(user=1)  # XXX Need real user
         for p_log in p_logs:
             if not check_password(value, p_log.password):
                 raise ValidationError(
