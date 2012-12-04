@@ -41,7 +41,7 @@ Before you use this library in your applications you may wish to demo its functi
 Open http://127.0.0.1:8000/
 
 Libraries
-~~~~~~~~~
+---------
 
 A list of libraries included:
 
@@ -50,7 +50,7 @@ A list of libraries included:
 - https://github.com/dstufft/django-passwords
 
 Articles
-~~~~~~~~
+--------
 
 A list of relevant articles:
 
