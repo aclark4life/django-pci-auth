@@ -7,15 +7,13 @@ from passwords.validators import validate_length, common_sequences, dictionary_w
 from validators import recently_used
 
 
-
-
-class PasswordField(CharField):
-    default_validators = [validate_length, common_sequences, dictionary_words, complexity]
+class PCICompliantPasswordField(PasswordField):
+    default_validators = [validate_length, common_sequences, dictionary_words, complexity, recently_used]
 
 
 class ValidatingSetPasswordForm(SetPasswordForm):
-    new_password2 = PasswordField(label=_("New password confirmation"))
+    new_password2 = PCICompliantPasswordField(label=_("New password confirmation"))
 
 
 class ValidatingPasswordChangeForm(PasswordChangeForm):
-    new_password2 = PasswordField(label=_("New password confirmation"))
+    new_password2 = PCICompliantPasswordField(label=_("New password confirmation"))
