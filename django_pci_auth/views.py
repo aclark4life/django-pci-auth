@@ -2,10 +2,10 @@ from dajaxice.decorators import dajaxice_register
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
 from django.shortcuts import render_to_response
 from django.template.response import TemplateResponse
 from django.utils import simplejson
-from models import PasswordLog, UserProfile
 # django 1.4 has a new timezone aware now() use if available.
 try:
     from django.utils.timezone import now
@@ -13,6 +13,12 @@ except ImportError:
     # fall back to none timezone aware now()
     from datetime import datetime
     now = datetime.now
+import sys
+# local
+from models import PasswordLog
+from models import UserProfile
+from forms import PCICompliantPasswordField
+
 
 # XXX Can we get the "real" message string from somewhere?
 BAD_PASS_MSG = ('Your old password was entered incorrectly. '
@@ -86,7 +92,21 @@ def check_old_password(request, password):
 
 @dajaxice_register
 def check_new_password1(request, password):
-    results = '<span class="alert alert-success">OK</span>'
+    # XXX A better way to validate here?
+    field = PCICompliantPasswordField()
+    errors = ""
+    for validator in field.validators:
+        try:
+            validator(password)
+        except ValidationError:
+            error = sys.exc_info()[1]
+            if errors != "":  # Add sep
+                errors += '</span><span class="alert alert-error">'
+            errors += error.__dict__['messages'][0]  # XXX Srsly?
+    if not errors:
+        results = '<span class="alert alert-success">OK</span>'
+    else:
+        results = '<span class="alert alert-error">%s</span>' % errors
     return simplejson.dumps({'message':results})
 
 
