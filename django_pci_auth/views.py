@@ -46,7 +46,7 @@ def password_change_done(request,
     password_log.create_date = now()
     password_log.save()
 
-    # expire old used passwords (move someone else?)
+    # expire old used passwords (move somewhere else?)
     p_logs = PasswordLog.objects.filter(user=user).order_by("-create_date")
     p_count = 0
     for p_log in p_logs:
