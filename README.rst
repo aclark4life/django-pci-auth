@@ -117,7 +117,7 @@ License
 
 This software is licensed under the same BSD license that Django is licensed under. See: `LICENSE`_.
 
-.. _`LICENSE`: https://github.com/aclark4life/django-pci-auth/blob/master/LICENSE
+.. _`LICENSE`: https://github.com/aclark4life/django-pci-auth/blob/master/docs/LICENSE.txt
 
 Notes
 -----
