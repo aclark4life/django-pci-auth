@@ -12,11 +12,11 @@ This library integrates the current Django "best of" PCI auth libraries into a s
 And adding additional functionality e.g.:
 
 - Database models to persist event data e.g. lockouts (See: docs/MODELS.rst).
-- Additional `recently_used` validator for django-passwords.
+- Additional ``recently_used`` validator for django-passwords.
 
 .. Note::
 
-    Currently: this application validates password fields via un-encrypted AJAX communication, use only with SSL! In the future: this application may encrypt its AJAX communication via a JavaScript encryption library TBD.
+    Currently this application validates password fields via un-encrypted AJAX communication, use with SSL only! In the future this application may encrypt its AJAX communication via some JavaScript encryption library TBD.
 
 Features
 --------
