@@ -1,8 +1,3 @@
-Developer 
-=========
-
-Developer documentation
-
 Models
 ------
 
