@@ -1,7 +1,7 @@
 django-pci-auth
 ===============
 
-**Django 1.4+ only**
+**Django 1.4+ with SSL only**
 
 This library integrates the current Django "best of" PCI auth libraries into a single application then fills in the gaps. Filling in the gaps involves making decisions for you e.g.:
 
@@ -14,6 +14,10 @@ And adding additional functionality e.g.:
 - Database models to persist event data e.g. lockouts (See: docs/MODELS.rst).
 - Additional `recently_used` validator for django-passwords.
 
+.. Note::
+
+    Currently: this application validates password fields via un-encrypted AJAX communication, use only with SSL! In the future: this application may encrypt its AJAX communication via a JavaScript encryption library TBD.
+
 Features
 --------
 
@@ -25,9 +29,9 @@ Features
 - Generate event/email when lock-out occurs.
 - Set flags disallowing certain accounts to be locked out.
 - Log every log-on and explicit log-out (not necessary to log timed out log-ins).
-- Track last four passwords and do not allow re-use.
+- Track last four passwords and do not allow re-use. [4]
 - Force password reset after X amount of time.
-- Provide JavaScript to check for strong passwords inline.
+- Provide JavaScript to check for strong passwords inline. [5]
 
 Installation
 ------------
@@ -131,3 +135,5 @@ Notes
 .. [1] This feature is included with Django 1.4+
 .. [2] This feature is provided by django-passwords
 .. [3] This feature is provided by django-axes
+.. [4] https://github.com/aclark4life/django-pci-auth/issues/3
+.. [5] https://github.com/aclark4life/django-pci-auth/issues/4
