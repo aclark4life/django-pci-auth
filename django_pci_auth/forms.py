@@ -2,7 +2,10 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.forms import SetPasswordForm
 from django.utils.translation import ugettext_lazy as _
 from passwords.fields import PasswordField
-from passwords.validators import validate_length, common_sequences, dictionary_words, complexity
+from passwords.validators import common_sequences
+from passwords.validators import complexity
+from passwords.validators import dictionary_words
+from passwords.validators import validate_length
 # local
 from validators import recently_used
 
