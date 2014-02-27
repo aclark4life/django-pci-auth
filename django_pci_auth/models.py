@@ -1,6 +1,12 @@
-from django.contrib.auth.models import User
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.conf import settings
+
+
+if hasattr(settings, 'AUTH_USER_MODEL'):
+    User = settings.AUTH_USER_MODEL
+else:
+    from django.contrib.auth.models import User
 
 
 class UserProfile(models.Model):
