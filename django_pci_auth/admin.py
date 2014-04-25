@@ -1,6 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from django.contrib.auth.models import User
+from django.contrib.admin.sites import NotRegistered
+try:
+    from django.contrib.auth import get_user_model
+    User = get_user_model()
+except ImportError:
+    from django.contrib.auth.models import User
 from django_pci_auth.models import UserProfile, PasswordLog
 
 
@@ -26,6 +31,11 @@ class PasswordLogAdmin(admin.ModelAdmin):
     date_hierarchy = 'create_date'
 
 
-admin.site.unregister(User)  # Re-register UserAdmin
+try:
+    admin.site.unregister(User)  # Re-register UserAdmin
+except NotRegistered:
+    pass  # If it's not registered, just register it (allows for custom user 
+          # models)
 admin.site.register(User, UserAdmin)
 admin.site.register(PasswordLog, PasswordLogAdmin)
+
