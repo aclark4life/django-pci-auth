@@ -18,6 +18,7 @@ setup(
         'django-passwords',
         'docutils',
         'py-bcrypt',
+        'pytz',
     ],
     long_description=(
         open("README.rst").read() + '\n' +
