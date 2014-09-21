@@ -1,14 +1,25 @@
 Changes
 =======
 
+0.0.7 (unreleased)
+------------------
+
+- Add pytz dep
+
+- Allow the use of a custom user model
+  [daniell]
+
+0.0.6 (2012-12-05)
+------------------
+
+- Add a note re: SSL
+
 0.0.5 (2012-12-04)
 ------------------
 
 - Feature complete
-  [aclark]
 
 0.0.4 (2012-11-28)
 ------------------
 
 - Pre-release, includes most features promised.
-  [aclark]
