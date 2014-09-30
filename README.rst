@@ -5,13 +5,13 @@ django-pci-auth
 
     Currently this application validates password fields via **un-encrypted AJAX** communication, please use with SSL only!
 
-This library integrates the current Django "best of" PCI auth libraries into a single application then fills in the gaps. Filling in the gaps involves making decisions for you e.g.:
+This library integrates currently available Django PCI-related libraries into a single application, then provides additional functionality to achieve full PCI compliance. Existing technology (in Django) includes:
 
 - https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
 - https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
 
-And adding additional functionality e.g.:
+Added functionality includes:
 
 - Database models to persist event data e.g. lockouts (See: `docs/MODELS.rst`_).
 - Additional ``recently_used`` validator for django-passwords.
