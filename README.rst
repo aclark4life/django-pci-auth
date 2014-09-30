@@ -11,6 +11,10 @@ This application integrates available PCI-related features then provides additio
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
 - https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
 
+Existing features (in add-ons) include:
+
+- Require strong passwords with a default length setting, overrideable in settings.py (via django-passwords.)
+
 Additional features (in django-pci-auth) include:
 
 - Database models to persist event data e.g. lockouts (See: `docs/MODELS.rst`_).
