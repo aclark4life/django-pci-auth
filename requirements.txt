@@ -1,2 +1,3 @@
 -e .
 -e git+git@github.com:django-security/django-axes.git#egg=axes
+-e git+git@github.com:jorgebastida/django-dajaxice.git#egg=dajaxice
