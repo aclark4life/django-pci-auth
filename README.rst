@@ -3,27 +3,12 @@ django-pci-auth
 
 .. Warning::
 
-    Currently this application validates password fields via **un-encrypted AJAX** communication, please use with SSL only!
+    This application validates passwords via **un-encrypted AJAX** communication. Please **use with SSL only**!
 
 Introduction
 ------------
 
-This application integrates available PCI-related features then provides additional PCI-related features. Existing features (in Django) include:
-
-- https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
-- https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
-- https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
-
-Existing features (via add-ons) include:
-
-- Require strong passwords with a default length setting, overrideable in settings.py (via django-passwords.)
-- Lock out account for X minutes after Y failed log-in attempts (via django-axes.)
-- Check for strong passwords inline (via django-dajaxice.)
-
-Additional features (in django-pci-auth) include:
-
-- Database models to persist event data e.g. lockouts (See: `docs/MODELS.rst`_).
-- Additional ``recently_used`` validator for django-passwords.
+Provides integration with existing PCI-related features and adds additional functionality to deliver a uniform application. Helps you build PCI-compliant websites with Django, but offers no guarantees of compliance.
 
 Features
 --------
@@ -33,10 +18,10 @@ Features
 - Integrate strong passwords into Django Admin.
 - Lock out account for n minutes after x failed log-in attempts. [3]
 - Set inactivity timeouts.
-- Generate event/email when lock-out occurs.
+- Generate event/email when lock-out occurs. [4]
 - Set flags disallowing certain accounts to be locked out.
 - Log every log-on and explicit log-out (not necessary to log timed out log-ins).
-- Track last four passwords and do not allow re-use.
+- Track last four passwords and do not allow re-use. [5]
 - Force password reset after X amount of time.
 - Provide JavaScript to check for strong passwords inline.
 
@@ -64,9 +49,10 @@ A list of libraries included:
 Articles
 --------
 
-A list of relevant articles:
-
-- https://docs.djangoproject.com/en/dev/topics/auth/
+- https://docs.djangoproject.com/en/1.4/topics/auth/
+- https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
+- https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
+- https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
 - http://kencochrane.net/blog/2012/01/developers-guide-to-pci-compliant-web-applications/
 - http://stackoverflow.com/questions/2693837/django-staff-decorator
 - http://stackoverflow.com/questions/3566174/django-increase-inactivity-timeout
@@ -129,18 +115,8 @@ Recently used password log
 
 .. image:: https://raw.github.com/aclark4life/django-pci-auth/master/docs/screenshot-axes.png
 
-License
--------
-
-This software is licensed under the same BSD license that Django itself is licensed under. See: `LICENSE`_.
-
-.. _`LICENSE`: https://github.com/aclark4life/django-pci-auth/blob/master/docs/LICENSE.txt
-
-Notes
------
-
 .. [1] Included with Django 1.4+
 .. [2] Provided by django-passwords
 .. [3] Provided by django-axes
-
-.. _`docs/MODELS.rst`: https://github.com/aclark4life/django-pci-auth/blob/master/docs/MODELS.rst
+.. [4] https://github.com/django-security/django-pci-auth/blob/master/docs/MODELS.rst
+.. [5] https://github.com/django-security/django-pci-auth/blob/master/django_pci_auth/validators.py#L9
