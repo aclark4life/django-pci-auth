@@ -4,7 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.shortcuts import render_to_response
 from django.template.response import TemplateResponse
-from django.utils import simplejson
+import json
+
 # django 1.4 has a new timezone aware now() use if available.
 try:
     from django.utils.timezone import now
@@ -76,7 +77,7 @@ def password_change_done(request,
 
 @dajaxice_register
 def check_setting_password_length(request):
-    return simplejson.dumps({'message': PASSWORD_MIN_LENGTH})
+    return json.dumps({'message': PASSWORD_MIN_LENGTH})
 
 
 @dajaxice_register
@@ -87,7 +88,7 @@ def check_old_password(request, password):
         results = '<span class="alert alert-success">OK</span>'
     else:
         results = '<span class="alert alert-error">%s</span>' % BAD_PASS_MSG
-    return simplejson.dumps({'message': results})
+    return json.dumps({'message': results})
 
 
 @dajaxice_register
@@ -97,7 +98,7 @@ def check_new_password1(request, password):
         results = '<span class="alert alert-success">OK</span>'
     else:
         results = '<span class="alert alert-error">%s</span>' % errors
-    return simplejson.dumps({'message': results})
+    return json.dumps({'message': results})
 
 
 @dajaxice_register
@@ -117,4 +118,4 @@ def check_new_password2(request, password):
             errors2 += ('<span class="alert alert-error">%s</span>' %
                 NOT_EQUAL_MSG)
         results = '<span class="alert alert-error">%s</span>' % errors2
-    return simplejson.dumps({'message': results})
+    return json.dumps({'message': results})
