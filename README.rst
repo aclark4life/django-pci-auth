@@ -1,11 +1,9 @@
 django-pci-auth
 ===============
 
-**Django 1.4+ with SSL only**
+.. Warning::
 
-.. Note::
-
-    Currently this application validates password fields via un-encrypted AJAX communication, use with SSL only! In the future this application may encrypt its AJAX communication via some JavaScript encryption library TBD.
+    Currently this application validates password fields via **un-encrypted AJAX** communication, please use with SSL only!
 
 This library integrates the current Django "best of" PCI auth libraries into a single application then fills in the gaps. Filling in the gaps involves making decisions for you e.g.:
 
