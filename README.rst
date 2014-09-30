@@ -28,7 +28,7 @@ Features
 Installation
 ------------
 
-Before you use this library in your applications you may wish to demo its functionality. To do so, follow these steps::
+::
 
     $ virtualenv .
     $ bin/pip install django-pci-auth
@@ -68,11 +68,6 @@ How many old passwords will you store? This feature will prevent users from usin
 
 Screenshots
 -----------
-
-Feature overview (via index view)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: https://raw.github.com/aclark4life/django-pci-auth/master/docs/screenshot-index.png
 
 Password length enforcement (with AJAX validation)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
