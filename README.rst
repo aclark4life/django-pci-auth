@@ -32,6 +32,12 @@ Installation
 
     $ virtualenv .
     $ bin/pip install django-pci-auth
+
+Demo
+~~~~
+
+::
+
     $ bin/django-admin.py syncdb --settings=django_pci_auth.settings
     $ bin/django-admin.py runserver --settings=django_pci_auth.settings
 
