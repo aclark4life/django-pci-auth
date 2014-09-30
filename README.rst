@@ -11,9 +11,11 @@ This application integrates available PCI-related features then provides additio
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
 - https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
 
-Existing features (in add-ons) include:
+Existing features (via add-ons) include:
 
 - Require strong passwords with a default length setting, overrideable in settings.py (via django-passwords.)
+- Lock out account for X minutes after Y failed log-in attempts (via django-axes.)
+- Check for strong passwords inline (via django-dajaxice.)
 
 Additional features (in django-pci-auth) include:
 
@@ -31,9 +33,9 @@ Features
 - Generate event/email when lock-out occurs.
 - Set flags disallowing certain accounts to be locked out.
 - Log every log-on and explicit log-out (not necessary to log timed out log-ins).
-- Track last four passwords and do not allow re-use. [4]
+- Track last four passwords and do not allow re-use.
 - Force password reset after X amount of time.
-- Provide JavaScript to check for strong passwords inline. [5]
+- Provide JavaScript to check for strong passwords inline.
 
 Installation
 ------------
@@ -134,10 +136,8 @@ This software is licensed under the same BSD license that Django itself is licen
 Notes
 -----
 
-.. [1] This feature is included with Django 1.4+
-.. [2] This feature is provided by django-passwords
-.. [3] This feature is provided by django-axes
-.. [4] https://github.com/aclark4life/django-pci-auth/issues/3
-.. [5] https://github.com/aclark4life/django-pci-auth/issues/4
+.. [1] Included with Django 1.4+
+.. [2] Provided by django-passwords
+.. [3] Provided by django-axes
 
 .. _`docs/MODELS.rst`: https://github.com/aclark4life/django-pci-auth/blob/master/docs/MODELS.rst
