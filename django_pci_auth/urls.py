@@ -1,5 +1,6 @@
 from dajaxice.core import dajaxice_autodiscover, dajaxice_config
-from django.conf.urls.defaults import *
+from django.conf.urls import patterns, url, include  # Via
+    # http://stackoverflow.com/a/19962822
 from django.conf import settings
 #from django.contrib.auth.views import password_change_done
 from django.contrib import admin
