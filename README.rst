@@ -5,7 +5,7 @@ django-pci-auth
 
     Currently this application validates password fields via **un-encrypted AJAX** communication, please use with SSL only!
 
-This library integrates currently available Django PCI-related libraries into a single application, then provides additional functionality to achieve full PCI compliance. Existing technology (in Django) includes:
+This library integrates currently available Django PCI-related functionality into a single application, then provides additional PCI-related functionality. Existing functionality (in Django) includes:
 
 - https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
 - https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
