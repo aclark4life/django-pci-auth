@@ -37,32 +37,6 @@ Before you use this library in your applications you may wish to demo its functi
 
 Open http://127.0.0.1:8000/
 
-Libraries
----------
-
-A list of libraries included:
-
-- http://code.google.com/p/py-bcrypt/
-- https://github.com/codekoala/django-axes
-- https://github.com/dstufft/django-passwords
-
-Articles
---------
-
-- https://docs.djangoproject.com/en/1.4/topics/auth/
-- https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
-- https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
-- https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
-- http://kencochrane.net/blog/2012/01/developers-guide-to-pci-compliant-web-applications/
-- http://stackoverflow.com/questions/2693837/django-staff-decorator
-- http://stackoverflow.com/questions/3566174/django-increase-inactivity-timeout
-- http://stackoverflow.com/questions/5179635/django-account-lockout
-- http://stackoverflow.com/questions/5226329/enforcing-password-strength-requirements-with-django-contrib-auth-views-password
-- http://stackoverflow.com/questions/13055722/enforcing-password-strength-requirements-in-django
-- http://www.egrappler.com/jquery-strong-password-plugin-power-pwchecker/
-- http://www.insomnihack.com/?p=451
-- http://www.elementps.com/merchants/pci-dss/compliance-level/
-
 Settings
 --------
 

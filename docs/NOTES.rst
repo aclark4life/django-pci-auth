@@ -1,6 +1,5 @@
-======================
 Notes
-======================
+=====
 
 Notes on other similar (or included) apps
 
@@ -94,3 +93,19 @@ django-lockout is a cache-based Django app that locks out users after too many f
 No models since it is cache based. Does require a cache to work. Doesn't persist the data for long term storage if you cache flushes you are lost.
 
 I could see a potential issue if your cache isn't large enough, you could brute force a ton of requests, for the cache to fill, which would cause the cache to evict the list of blocked attempts and then you are allowed back in.. Haven't tested this, just a thought.
+
+References
+==========
+
+- https://docs.djangoproject.com/en/1.4/topics/auth/#using-bcrypt-with-django
+- https://docs.djangoproject.com/en/1.4/topics/auth/#increasing-the-work-factor
+- https://docs.djangoproject.com/en/1.4/topics/http/sessions/#session-cookie-age
+- http://kencochrane.net/blog/2012/01/developers-guide-to-pci-compliant-web-applications/
+- http://stackoverflow.com/questions/2693837/django-staff-decorator
+- http://stackoverflow.com/questions/3566174/django-increase-inactivity-timeout
+- http://stackoverflow.com/questions/5179635/django-account-lockout
+- http://stackoverflow.com/questions/5226329/enforcing-password-strength-requirements-with-django-contrib-auth-views-password
+- http://stackoverflow.com/questions/13055722/enforcing-password-strength-requirements-in-django
+- http://www.egrappler.com/jquery-strong-password-plugin-power-pwchecker/
+- http://www.insomnihack.com/?p=451
+- http://www.elementps.com/merchants/pci-dss/compliance-level/
