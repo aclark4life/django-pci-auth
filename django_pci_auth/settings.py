@@ -35,6 +35,7 @@ INSTALLED_APPS = (
     'axes',  # django-axes
     'dajaxice',  # django-dajaxice
     'django_pci_auth',
+    'password_policies',  #django-password-policies,
 )
 LANGUAGE_CODE = 'en-us'
 LOGIN_URL = '/admin/'

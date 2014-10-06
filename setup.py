@@ -15,6 +15,7 @@ setup(
         'django-admin-bootstrapped',
         'django-dajaxice',
         'django-passwords',
+        'django-password-policies',
         'docutils',
         'py-bcrypt',
         'pytz',
