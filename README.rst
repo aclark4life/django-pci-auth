@@ -20,7 +20,8 @@ Features
 - Set inactivity timeouts.
 - Generate event/email when lock-out occurs. [4]
 - Set flags disallowing certain accounts to be locked out.
-- Log every log-on and explicit log-out (not necessary to log timed out log-ins).
+- Provide history of valid logins.
+- Provide history of explicit logouts.
 - Track last four passwords and do not allow re-use. [5]
 - Force password reset after X amount of time.
 - Provide JavaScript to check for strong passwords inline.
