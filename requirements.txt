@@ -1,3 +1,2 @@
 -e .
 -e git+git@github.com:jorgebastida/django-dajaxice.git#egg=dajaxice
--e git+git@github.com:aclark4life/django-password-policies.git#egg=django-password-policies
