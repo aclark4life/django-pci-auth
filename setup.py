@@ -7,7 +7,7 @@ VERSION = '0.0.7'
 setup(
     author='Alex Clark',
     author_email='aclark@aclark.net',
-    description='Provides integration with existing PCI-related applications and adds additional functionality to deliver a uniform experience. Helps you build PCI-compliant websites but offers no guarantees of compliance.'
+    description='Integrates existing PCI-related applications and provides additional PCI-related features.'
     include_package_data=True,
     install_requires=[
         'Django>=1.4',
