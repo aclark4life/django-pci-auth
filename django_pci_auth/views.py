@@ -29,10 +29,6 @@ OLD_PASSWORD_STORAGE_NUM = getattr(settings, "OLD_PASSWORD_STORAGE_NUM", 4)
 PASSWORD_MIN_LENGTH = str(getattr(settings, "PASSWORD_MIN_LENGTH", ''))
 
 
-def index(request):
-    return render_to_response('django_pci_auth.html')
-
-
 # taken and altered from django.contrib.auth.views.password_change_done to add
 # code for logging password changes.
 @login_required
