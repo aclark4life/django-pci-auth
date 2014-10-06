@@ -9,10 +9,8 @@ except ImportError:
 from django_pci_auth.models import UserProfile, PasswordLog
 
 
-# https://docs.djangoproject.com/en/dev/topics/auth/\
-# #storing-additional-information-about-users
-# Define an inline admin descriptor for UserProfile model
-# which acts a bit like a singleton
+# https://docs.djangoproject.com/en/1.4/topics/auth/#storing-additional-information-about-users
+# Define an inline admin descriptor for UserProfile model which acts like a singleton
 class UserProfileInline(admin.StackedInline):
     model = UserProfile
     can_delete = False
