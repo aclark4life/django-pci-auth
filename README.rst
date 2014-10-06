@@ -8,6 +8,8 @@ django-pci-auth
 Introduction
 ------------
 
+Provides PCI-related password features.
+
 Features
 --------
 
