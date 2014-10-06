@@ -17,11 +17,11 @@ Features
 - Checking for strong passwords with a default length setting overrideable in settings.py. [2]
 - Integrate strong passwords into Django Admin.
 - Lock out account for n minutes after x failed log-in attempts. [3]
+- Provide history of valid logins. [3]
+- Provide history of explicit logouts (not timeouts). [3]
 - Set inactivity timeouts.
 - Generate event/email when lock-out occurs. [4]
 - Set flags disallowing certain accounts to be locked out.
-- Provide history of valid logins.
-- Provide history of explicit logouts (not timeouts).
 - Track last four passwords and do not allow re-use. [5]
 - Force password reset after X amount of time.
 - Provide JavaScript to check for strong passwords inline.
