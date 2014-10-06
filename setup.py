@@ -7,7 +7,7 @@ VERSION = '0.0.7'
 setup(
     author='Alex Clark',
     author_email='aclark@aclark.net',
-    description='Integrates existing PCI-related applications and provides additional PCI-related features.'
+    description='Integrates existing PCI-related applications and provides additional PCI-related features.',
     include_package_data=True,
     install_requires=[
         'Django>=1.4',
