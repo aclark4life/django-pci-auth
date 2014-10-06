@@ -4,11 +4,6 @@ from django.contrib.auth.forms import SetPasswordForm
 from django.forms import ValidationError
 from django.utils.translation import ugettext_lazy as _
 from passwords.fields import PasswordField
-from passwords.validators import common_sequences
-from passwords.validators import complexity
-from passwords.validators import dictionary_words
-from passwords.validators import validate_length
-from django_pci_auth.validators import recently_used
 from django_pci_auth.models import PasswordLog
 
 
@@ -32,7 +27,6 @@ class ValidatingSetPasswordForm(SetPasswordForm):
 
 class ValidatingPasswordChangeForm(PasswordChangeForm):
     new_password2 = PCICompliantPasswordField(label=_("New password confirmation"))
-
 
     def clean_new_password2(self):
         password2 = self.cleaned_data.get('new_password2')
