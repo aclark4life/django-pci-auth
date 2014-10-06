@@ -8,7 +8,7 @@ django-pci-auth
 Introduction
 ------------
 
-Provides integration with existing PCI-related features and adds additional functionality to deliver a uniform application. Helps you build PCI-compliant websites with Django, but offers no guarantees of compliance.
+Provides integration with existing PCI-related applications and adds additional functionality to deliver a uniform experience. Helps you build PCI-compliant websites but offers no guarantees of compliance.
 
 Features
 --------
