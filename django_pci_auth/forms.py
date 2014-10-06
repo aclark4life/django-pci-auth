@@ -8,9 +8,8 @@ from passwords.validators import common_sequences
 from passwords.validators import complexity
 from passwords.validators import dictionary_words
 from passwords.validators import validate_length
-# local
-from validators import recently_used
-from models import PasswordLog
+from django_pci_auth.validators import recently_used
+from django_pci_auth.models import PasswordLog
 
 
 def check_password_recent(user, password1):
@@ -25,7 +24,6 @@ def check_password_recent(user, password1):
 class PCICompliantPasswordField(PasswordField):
     """
     """
-#    default_validators = [validate_length, common_sequences, dictionary_words, complexity, recently_used]
 
 
 class ValidatingSetPasswordForm(SetPasswordForm):
@@ -46,6 +44,3 @@ class ValidatingPasswordChangeForm(PasswordChangeForm):
                 raise ValidationError(
                     "That password was used recently. Please pick a new one.")
         return password2
-
-
-
