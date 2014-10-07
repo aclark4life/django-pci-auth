@@ -8,10 +8,13 @@ django-pci-auth
 Introduction
 ------------
 
-Provides PCI-related password features.
+Provides change password validation with AJAX support and history check.
 
 Features
 --------
+
+- Change password validation with AJAX via dajaxice.
+- Password history check.
 
 Installation
 ------------
