@@ -23,3 +23,8 @@ Installation
 
     $ virtualenv .
     $ bin/pip install django-pci-auth
+
+Credits
+-------
+
+Original funding for this project provided by `Auric Systems International <http://www.AuricSystems.com/>`_.
