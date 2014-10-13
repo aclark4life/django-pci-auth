@@ -1,11 +1,15 @@
 Changes
 =======
 
+0.1.0 (2014-10-13)
+------------------
+
+- Remove manage, settings, urls
+
 0.0.9 (2014-10-07)
 ------------------
 
 - Rename GitHub organization from django-security to django-pci to emphasize focus on providing assistance with building PCI compliant websites with Django.
-  [aclark4life]
 
 0.0.8 (2014-10-06)
 ------------------
