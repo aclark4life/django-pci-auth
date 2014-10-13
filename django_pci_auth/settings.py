@@ -1,5 +1,5 @@
 """
-Django settings for django_pci_auth2 project.
+Django settings for django_pci_auth project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'django_pci_auth.urls'
 
-#WSGI_APPLICATION = 'django_pci_auth2.wsgi.application'
+#WSGI_APPLICATION = 'django_pci_auth.wsgi.application'
 
 
 # Database
