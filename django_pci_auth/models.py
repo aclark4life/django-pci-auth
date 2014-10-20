@@ -14,7 +14,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User)
 
     # Other fields here
-    nolockout = models.BooleanField()
+    nolockout = models.BooleanField(default=False)
     password_last_changed = models.DateTimeField(auto_now_add=True)
 
 
