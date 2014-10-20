@@ -1,6 +1,11 @@
 Changes
 =======
 
+0.1.1 (2014-10-20)
+------------------
+
+- Set nolockout boolean default value to False
+
 0.1.0 (2014-10-13)
 ------------------
 
